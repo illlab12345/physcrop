@@ -1,0 +1,147 @@
+{
+  "schema_version": "physcrop_risk_alert_evidence_v1",
+  "evidence_id": "ev-Uruguay_DUP4_farm10_field476_soybean_2018",
+  "mode": "retrospective_audit",
+  "identity": {
+    "organization_id": "yieldsat-demo",
+    "farm_id": "Uruguay_DUP4_farm10",
+    "field_id": "Uruguay_DUP4_farm10_field476_soybean_2018",
+    "field_number": "476",
+    "country": "Uruguay",
+    "crop": "soybean",
+    "season": "2018"
+  },
+  "current_information_boundary": {
+    "look": 3,
+    "look_type": "crop_specific_absolute_gdd",
+    "gdd_cutoff": 1765.9866821289063,
+    "cutoff_date": "2018-02-08",
+    "latest_used_acquisition_date": "2018-02-08",
+    "preharvest_status": "verified_pre_harvest_from_frozen_audit"
+  },
+  "model_evidence": {
+    "prediction_t_ha": 1.3963948080317177,
+    "training_defined_low_yield_cutoff_t_ha": 1.3531898975372314,
+    "risk_score": -0.039700909784707646,
+    "null_pvalue": 0.027522935779816515,
+    "look_alpha": 0.025,
+    "watch": 1,
+    "watch_original": 1,
+    "action": 0,
+    "action_original": 0,
+    "persistence_required": 2,
+    "decision_policy": "post_audit_clean_null",
+    "frozen_policy": "original_frozen"
+  },
+  "look_history": [
+    {
+      "look": 1,
+      "look_type": "crop_specific_absolute_gdd",
+      "gdd_cutoff": 950.9159057617187,
+      "prediction_t_ha": 1.5182630437602604,
+      "low_yield_cutoff_t_ha": 1.3531898975372314,
+      "risk_score": -0.15168539897599562,
+      "null_pvalue": 0.03225806451612903,
+      "alpha": 0.01,
+      "watch_original": 0,
+      "action_original": 0,
+      "watch_clean": 0,
+      "calibration_method": "global_raw",
+      "baseline_t_ha": 2.4098708967710363,
+      "upper_90": 2.8384802185754356,
+      "upper_95": 3.686240115544283,
+      "cutoff_date": "2017-12-25",
+      "harvest_date": "2018-05-16",
+      "lead_days": 142
+    },
+    {
+      "look": 2,
+      "look_type": "crop_specific_absolute_gdd",
+      "gdd_cutoff": 1358.4512939453125,
+      "prediction_t_ha": 1.3839635733958786,
+      "low_yield_cutoff_t_ha": 1.3531898975372314,
+      "risk_score": -0.02827787200632912,
+      "null_pvalue": 0.009174311926605505,
+      "alpha": 0.015,
+      "watch_original": 1,
+      "action_original": 0,
+      "watch_clean": 1,
+      "calibration_method": "hierarchy_power50",
+      "baseline_t_ha": 2.4098708967710363,
+      "upper_90": 2.915925012900477,
+      "upper_95": 3.642101976483839,
+      "cutoff_date": "2018-01-09",
+      "harvest_date": "2018-05-16",
+      "lead_days": 127
+    },
+    {
+      "look": 3,
+      "look_type": "crop_specific_absolute_gdd",
+      "gdd_cutoff": 1765.9866821289063,
+      "prediction_t_ha": 1.3963948080317177,
+      "low_yield_cutoff_t_ha": 1.3531898975372314,
+      "risk_score": -0.039700909784707646,
+      "null_pvalue": 0.027522935779816515,
+      "alpha": 0.025,
+      "watch_original": 0,
+      "action_original": 0,
+      "watch_clean": 0,
+      "calibration_method": "global_raw",
+      "baseline_t_ha": 2.4098708967710363,
+      "upper_90": 3.078139361400418,
+      "upper_95": 3.9072032521750835,
+      "cutoff_date": "2018-02-08",
+      "harvest_date": "2018-05-16",
+      "lead_days": 97
+    }
+  ],
+  "uncertainty": {
+    "method": "one_sided_split_conformal",
+    "upper_90": 3.078139361400418,
+    "upper_95": 3.9072032521750835,
+    "interpretation": "upper prediction evidence, not event probability"
+  },
+  "spatial_evidence": {
+    "available": false,
+    "map_asset_id": null,
+    "pixels": null,
+    "rmse_spatial_t_ha": null,
+    "r2_spatial": null,
+    "within_field_rho": null,
+    "bottom20_auroc": null,
+    "interpretation_boundary": "relative within-field evidence; not a causal or disease map"
+  },
+  "data_quality": {
+    "frozen_results_only": true,
+    "look_count": 3,
+    "missing_looks": [],
+    "spatial_available": false,
+    "per_look_observation_counts": "not_available_in_frozen_csv",
+    "limitations": [
+      "证据由冻结审计结果重建；不暴露逐观测期的观测数量。",
+      "p 值是与参考分布比较的越界证据，不是低产概率。",
+      "空间指标是用于定位的田块级证据，不是诊断依据。"
+    ]
+  },
+  "provenance": {
+    "model_hash_look1": "aaa8c605843d218eeb6bbac9a878c2b3d0513619bbdcee5fb3c26d145c7e7dd7",
+    "model_hash_look2": "e69cd02ca307da5738069f363b5e4b116fbc22c113f751249ab01697d594c6b2",
+    "model_hash_look3": "8330a7e956eb9dd1dddd4b82dc1c16dcef39be6140bf4ebbebcc77958c82f881",
+    "feature_hash": "07be1d8d56e3141cc9181fb7ca77181d4cf220bb8c3e50a4c119158d1be1ebab",
+    "protocol_hash": "156df3719b617cc217d429e9c6fa61420323f656b09fe14c8037904346efa299",
+    "freeze_manifest_sha256": "8613759cf03334ccd0fd82fbd8d13d536dbe863446e8f02dc4697584587088a5",
+    "adapter_version": "yieldsat_risk_adapter_v1.0",
+    "decision_policy_version": "original_frozen|post_audit_clean_null"
+  },
+  "retrospective_block": {
+    "sealed_for_audit": true,
+    "target_t_ha": 0.9442515969276428,
+    "true_low": 1,
+    "covered_90": 1,
+    "covered_95": 1,
+    "harvest_date": "2018-05-16",
+    "lead_days": 97,
+    "not_for_prospective_use": true
+  },
+  "evidence_hash": "39fec4655b91f7b5335c9a138e2a976d4755a0a8a62ceec2ac7c80100a8c9181"
+}

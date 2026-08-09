@@ -1,0 +1,294 @@
+{
+  "schema_version": "physcrop_event_report_v3",
+  "report_id": "RPT-Argentina_DUP1_farm54_field740_soybean_2020-01KZJMV4K382RZNET69XS4PAEN",
+  "event_key": "Argentina_DUP1_farm54_field740_soybean_2020",
+  "language": "zh-CN",
+  "status": "needs_review",
+  "generated_at": "2026-08-09T06:54:54+00:00",
+  "risk": {
+    "level": "normal",
+    "label": "常规监测",
+    "decision_source": "deterministic_rule",
+    "not_a_diagnosis": true,
+    "policy": "post_audit_clean_null"
+  },
+  "farmer_summary": {
+    "headline": "常规监测：当前尚未形成 watch 或 action，需结合现场信息判断原因。",
+    "what_we_observed": "Argentina soybean 2020 季节第 3 个观测时点预测产量为 4.25 吨/公顷，训练定义低产阈值为 2.43 吨/公顷。",
+    "what_to_do_now": [
+      "在下一次有效卫星观测或 24 至 72 小时内复查，比较风险范围是否持续或扩大。",
+      "在风险区与对照区分别检查株距、缺苗和结荚差异并拍照。",
+      "在风险区中心、边缘和相邻对照区各拍摄至少一张同角度照片并记录时间与位置。"
+    ],
+    "important_note": "模型只能提示低产风险，不能仅凭遥感确定缺水、病虫害、缺肥或产量损失。"
+  },
+  "professional_analysis": {
+    "conclusion": "常规监测：当前尚未形成 watch 或 action，需结合现场信息判断原因。",
+    "narrative": "当前风险等级为常规监测。预测产量 4.25 吨/公顷，低于训练定义低产阈值 2.43 吨/公顷 的差距由风险分表达；p 值 0.7523 与 观测期显著性水平 0.025 比较决定关注或行动告警。p 值不是低产概率，预测区间也不是保证范围；候选原因仍需现场排查。",
+    "event_overview": {
+      "country": "Argentina",
+      "crop": "soybean",
+      "season": "2020",
+      "field_id": "Argentina_DUP1_farm54_field740_soybean_2020",
+      "farm_id": "Argentina_DUP1_farm54",
+      "current_look": 3,
+      "look_type": "crop_specific_absolute_gdd",
+      "gdd_cutoff": 1765.9866821289063,
+      "cutoff_date": "2020-02-26",
+      "analysis_mode": "prospective_inference",
+      "decision_policy": "post_audit_clean_null"
+    },
+    "trajectory_assessment": {
+      "observation_count": 3,
+      "above_threshold_count": 0,
+      "longest_consecutive_above": 0,
+      "first_above_threshold_date": null,
+      "latest_look": 3,
+      "latest_prediction_t_ha": 4.252681166877398,
+      "latest_pvalue": 0.7522935779816514,
+      "latest_alpha": 0.025,
+      "watch_original": 0,
+      "action_original": 0,
+      "watch_clean": 0,
+      "action_clean": 0,
+      "narrative": "该田块在 3 个可用观测期中有 0 个观测期越过校准阈值，最长连续 0 个观测期。当前观测期为第 3 期，预测产量 4.25 吨/公顷，p 值 0.7523 与 观测期显著性水平 0.025 比较用于决定关注或行动告警，不代表低产概率。",
+      "source_paths": [
+        "look_history",
+        "model_evidence",
+        "current_information_boundary"
+      ]
+    },
+    "spatial_assessment": {
+      "available": false,
+      "narrative": "当前田块没有可用的空间残差图；空间证据不作为本报告的一部分。",
+      "interpretation_boundary": "relative within-field evidence; not a causal or disease map",
+      "source_paths": [
+        "spatial_evidence"
+      ]
+    },
+    "evidence_items": [
+      {
+        "title": "预测产量",
+        "field_path": "model_evidence.prediction_t_ha",
+        "value": 4.252681166877398,
+        "interpretation": "当前 look 可用观测下的最终产量点估计。",
+        "limitation": "点估计不是保证范围，也不是低产概率。"
+      },
+      {
+        "title": "训练定义低产 cutoff",
+        "field_path": "model_evidence.training_defined_low_yield_cutoff_t_ha",
+        "value": 2.4290585041046144,
+        "interpretation": "由模型拟合分区 q20 与预声明层级确定的低产阈值。",
+        "limitation": "阈值来自训练分布，不代表经营目标或保险条款。"
+      },
+      {
+        "title": "越界检验 p 值",
+        "field_path": "model_evidence.null_pvalue",
+        "value": 0.7522935779816514,
+        "interpretation": "当前分数相对非低产参考分布的越界程度。",
+        "limitation": "p 值不是低产概率。"
+      },
+      {
+        "title": "观测期显著性水平",
+        "field_path": "model_evidence.look_alpha",
+        "value": 0.025,
+        "interpretation": "本观测期分配的族系错误预算份额。",
+        "limitation": "三个观测期之和为 0.05，单期越界不等于确定风险。"
+      },
+      {
+        "title": "关注信号",
+        "field_path": "model_evidence.watch",
+        "value": 0,
+        "interpretation": "当前决策口径下是否有单观测期越界。",
+        "limitation": "关注信号表示需要复查，不表示确诊。"
+      },
+      {
+        "title": "行动告警",
+        "field_path": "model_evidence.action",
+        "value": 0,
+        "interpretation": "当前决策口径下是否连续两个观测期越界。",
+        "limitation": "行动告警是需要人工复核的保守告警，不表示自动干预。"
+      },
+      {
+        "title": "90% 上界",
+        "field_path": "uncertainty.upper_90",
+        "value": 5.934425720246098,
+        "interpretation": "单侧 split-conformal 90% 上界。",
+        "limitation": "上界是预测证据，不是保证范围。"
+      },
+      {
+        "title": "95% 上界",
+        "field_path": "uncertainty.upper_95",
+        "value": 6.7634896110207645,
+        "interpretation": "单侧 split-conformal 95% 上界。",
+        "limitation": "上界是预测证据，不是保证范围。"
+      }
+    ],
+    "candidate_issues": [
+      {
+        "knowledge_id": "KB-RISK-SOYBEAN-V1",
+        "title": "大豆低产风险现场核验",
+        "status": "待现场排查",
+        "explanation": "大豆田出现低产风险信号，需核验植株密度、结荚情况、水分与病害症状。",
+        "confidence": "证据有限",
+        "supporting_evidence": [
+          "低产风险信号",
+          "当前观测期的预测与 p 值"
+        ],
+        "missing_information": [
+          "现场症状照片与对照区记录",
+          "土壤水分、积排水和近期农事记录",
+          "与 look 日期对齐的天气观测"
+        ],
+        "field_questions": [
+          "风险区与对照区是否存在可重复的植株或冠层差异？",
+          "土壤水分、积排水和灌排设施状态如何？",
+          "近期降水、农事操作与风险出现时间是否吻合？"
+        ]
+      },
+      {
+        "knowledge_id": "KB-RISK-GENERIC-CHECK-V1",
+        "title": "通用低风险现场信息采集",
+        "status": "待现场排查",
+        "explanation": "模型给出低产风险信号，需要现场核验补充信息；当前证据不足以判断具体病因。",
+        "confidence": "证据有限",
+        "supporting_evidence": [
+          "低产风险信号",
+          "当前观测期的预测与 p 值"
+        ],
+        "missing_information": [
+          "现场症状照片与对照区记录",
+          "土壤水分、积排水和近期农事记录",
+          "与 look 日期对齐的天气观测"
+        ],
+        "field_questions": [
+          "风险区与对照区是否存在可重复的植株或冠层差异？",
+          "土壤水分、积排水和灌排设施状态如何？",
+          "近期降水、农事操作与风险出现时间是否吻合？"
+        ]
+      }
+    ],
+    "data_quality": {
+      "frozen_results_only": true,
+      "look_count": 3,
+      "missing_looks": [],
+      "spatial_available": false,
+      "per_look_observation_counts": "not_available_in_frozen_csv",
+      "limitations": [
+        "证据由冻结审计结果重建；不暴露逐观测期的观测数量。",
+        "p 值是与参考分布比较的越界证据，不是低产概率。",
+        "空间指标是用于定位的田块级证据，不是诊断依据。"
+      ]
+    }
+  },
+  "actions": {
+    "low_risk_now": [
+      "在下一次有效卫星观测或 24 至 72 小时内复查，比较风险范围是否持续或扩大。",
+      "在风险区与对照区分别检查株距、缺苗和结荚差异并拍照。",
+      "在风险区中心、边缘和相邻对照区各拍摄至少一张同角度照片并记录时间与位置。"
+    ],
+    "after_field_confirmation": [],
+    "automatically_executed": []
+  },
+  "action_plan": {
+    "rationale": "当前为常规监测，处置目标是先用低风险现场检查补齐信息，再由人工决定是否升级。系统不会自动触发灌溉、施肥、施药或植保操作。",
+    "within_24_hours": [
+      "在下一次有效卫星观测或 24 至 72 小时内复查，比较风险范围是否持续或扩大。",
+      "在风险区与对照区分别检查株距、缺苗和结荚差异并拍照。",
+      "在风险区中心、边缘和相邻对照区各拍摄至少一张同角度照片并记录时间与位置。"
+    ],
+    "within_24_to_72_hours": [
+      "在下一次有效卫星观测或 24 至 72 小时内复查，比较风险范围是否持续或扩大。"
+    ],
+    "after_confirmation": [],
+    "do_not_do": [
+      "不要把 p 值解释为低产概率或保证范围。",
+      "不要在缺少现场确认时直接施药、追肥或改变灌溉计划。",
+      "不要把空间证据解释为病因、病虫害或精确减产图。"
+    ]
+  },
+  "field_checklist": [
+    {
+      "item": "确认作物、品种和生育期",
+      "required": true,
+      "method": "核对种植档案或向地块负责人确认。",
+      "record": "作物、品种、生育期、播种日期。"
+    },
+    {
+      "item": "风险区与对照区对照拍照",
+      "required": true,
+      "method": "中心、边缘、邻近正常区采用相近视角各拍摄至少一张。",
+      "record": "照片编号、时间、位置和拍摄方向。"
+    },
+    {
+      "item": "记录土壤水分、积水和灌排状态",
+      "required": true,
+      "method": "在风险区和对照区分别检查表层及根层，并检查灌排设施。",
+      "record": "点位、土壤水分等级、积水范围、灌排异常。"
+    },
+    {
+      "item": "记录冠层和植株可见症状",
+      "required": true,
+      "method": "观察叶片、茎秆、倒伏、缺苗、斑点和虫体，避免先入为主判断病因。",
+      "record": "症状、发生比例、空间边界和对照差异。"
+    }
+  ],
+  "recheck_plan": {
+    "recommended_window": "下一次有效卫星 look 或 24 至 72 小时内",
+    "compare": [
+      "预测与低产阈值的差距是否收窄",
+      "p 值与观测期显著性水平的关系是否持续越界",
+      "现场症状是否持续或加重"
+    ],
+    "close_condition": "后续观测期未越界、现场未见异常且数据质量问题得到解释，可降级为常规监测。",
+    "escalate_condition": "形成 action、风险范围扩大或现场发现明确症状时，升级给农艺师。"
+  },
+  "escalation": {
+    "rule": "连续两个 look 越界形成 action，或现场出现明确症状且复查无法解释时，交由农艺师复核。",
+    "human_approval_required": true
+  },
+  "knowledge_citations": [
+    {
+      "source_id": "FAO-CROPWAT",
+      "organization": "Food and Agriculture Organization of the United Nations",
+      "title": "CROPWAT - Crop water requirements and irrigation scheduling",
+      "url": "https://www.fao.org/land-water/databases-and-software/cropwat/en/",
+      "accessed": "2026-08-03",
+      "scope": "基于作物、土壤和气象信息开展水分需求分析；不用于地块级确诊"
+    },
+    {
+      "source_id": "FAO-ASIS",
+      "organization": "Food and Agriculture Organization of the United Nations",
+      "title": "Agricultural Stress Index System",
+      "url": "https://www.fao.org/giews/earthobservation/asistool.jsp",
+      "accessed": "2026-08-03",
+      "scope": "遥感农业胁迫信息的区域监测语境；不用于地块级病因确诊"
+    },
+    {
+      "source_id": "YIELDSAT-PAPER",
+      "organization": "PhysCrop project",
+      "title": "PhysCrop-Risk: Turning Partial-Season Earth Observation into Calibrated Low-Yield Alerts",
+      "url": "https://arxiv.org/abs/2604.00940",
+      "accessed": "2026-08-03",
+      "scope": "低产风险预警的系统定义、校准与审计边界"
+    }
+  ],
+  "limitations": [
+    "证据由冻结审计结果重建；不暴露逐观测期的观测数量。",
+    "p 值是与参考分布比较的越界证据，不是低产概率。",
+    "空间指标是用于定位的田块级证据，不是诊断依据。",
+    "本证据来自冻结审计产物重建；真实部署需要前瞻运行验证。"
+  ],
+  "provenance": {
+    "evidence_hash": "1a6301148faf94d5d531239fed3737f341e9737c69f59432694c21e0231a9878",
+    "knowledge_version": "2026.08.03",
+    "generator": "deterministic_fallback",
+    "model": "PhysCrop-Risk dual-tree",
+    "adapter_version": "yieldsat_risk_adapter_v1.0"
+  },
+  "review": {
+    "decision": "pending",
+    "reviewer": null,
+    "comment": null
+  }
+}

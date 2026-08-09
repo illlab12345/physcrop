@@ -1,0 +1,168 @@
+{
+  "experiment": 1,
+  "name": "public YieldSAT LSTM field-mean flexible-format adaptation",
+  "reference_notebook": "external/yieldsat-ml-tutorial.ipynb",
+  "official_table_exact_reproduction": false,
+  "reason_not_exact": "Only the flexible raw archive and tutorial are public locally; the tutorial expects preprocessed NetCDF and is demonstrative.",
+  "pooled": {
+    "lstm": {
+      "n": 218,
+      "rmse": 1.1797628192988105,
+      "mae": 0.8321411699330039,
+      "r2": 0.8192734674399231,
+      "spearman_rho": 0.8534774180807091
+    },
+    "country_crop_training_mean": {
+      "n": 218,
+      "rmse": 1.3193776306839164,
+      "mae": 1.034400501921029,
+      "r2": 0.7739675776819418,
+      "spearman_rho": 0.7293513662286066
+    },
+    "rmse_delta_lstm_minus_mean_bootstrap95": [
+      -0.2094861599905512,
+      -0.14014020607278743,
+      -0.07474219050677185
+    ]
+  },
+  "per_group": {
+    "Argentina|soybean": {
+      "lstm": {
+        "n": 64,
+        "rmse": 0.8702653554624974,
+        "mae": 0.6981909230351447,
+        "r2": 0.41356708929488295,
+        "spearman_rho": 0.6586996336996336
+      },
+      "mean": {
+        "n": 64,
+        "rmse": 1.1367259492135353,
+        "mae": 0.9306334850449975,
+        "r2": -0.0005216564549939129,
+        "spearman_rho": NaN
+      }
+    },
+    "Brazil|corn": {
+      "lstm": {
+        "n": 20,
+        "rmse": 1.713614127247358,
+        "mae": 1.3229737782478332,
+        "r2": -0.008406276535279922,
+        "spearman_rho": 0.3142857142857143
+      },
+      "mean": {
+        "n": 20,
+        "rmse": 1.7133434403032721,
+        "mae": 1.3230312667787074,
+        "r2": -0.008087720741270177,
+        "spearman_rho": NaN
+      }
+    },
+    "Germany|rapeseed": {
+      "lstm": {
+        "n": 15,
+        "rmse": 1.5096985905927074,
+        "mae": 1.219598480860392,
+        "r2": -0.019641467727783635,
+        "spearman_rho": -0.028571428571428564
+      },
+      "mean": {
+        "n": 15,
+        "rmse": 1.4951309498412981,
+        "mae": 1.2392043178731744,
+        "r2": -5.8610695603533713e-05,
+        "spearman_rho": NaN
+      }
+    },
+    "Germany|wheat": {
+      "lstm": {
+        "n": 28,
+        "rmse": 1.9660679913070769,
+        "mae": 1.4979942321777346,
+        "r2": 0.0028119187744031215,
+        "spearman_rho": -0.019704433497536946
+      },
+      "mean": {
+        "n": 28,
+        "rmse": 1.9690602019857621,
+        "mae": 1.490419830594744,
+        "r2": -0.00022568460249638989,
+        "spearman_rho": NaN
+      }
+    },
+    "Uruguay|soybean": {
+      "lstm": {
+        "n": 91,
+        "rmse": 0.7689072043257157,
+        "mae": 0.5497281834319399,
+        "r2": 0.43140384630743234,
+        "spearman_rho": 0.722105430801083
+      },
+      "mean": {
+        "n": 91,
+        "rmse": 1.027019866919322,
+        "mae": 0.8698716595118666,
+        "r2": -0.014410525882661895,
+        "spearman_rho": NaN
+      }
+    }
+  },
+  "macro_r2": 0.16394702202273098,
+  "integrity": {
+    "audit_targets_read": false,
+    "field_overlap_fit_test": false,
+    "normalizers_fit_only": true,
+    "deterministic_max_abs_difference": 0.0,
+    "deterministic_tolerance": 1e-07,
+    "finite_prediction_fraction": 1.0,
+    "eligible_prediction_fraction": 1.0
+  },
+  "provenance": {
+    "Argentina|soybean": {
+      "status": "completed",
+      "fit": 260,
+      "stop": 51,
+      "test": 64,
+      "fit_ids_sha256": "d12107976d3ba84e1023adfeadf253f16c93ef17557ec5e12ccb6c3a11987336",
+      "test_ids_sha256": "0165062589e399b11e2c52ddc087adec37d6376c6b42784deb393e659add00c9"
+    },
+    "Brazil|corn": {
+      "status": "completed",
+      "fit": 64,
+      "stop": 12,
+      "test": 20,
+      "fit_ids_sha256": "b6aec5fc7036fbf320fc46fa0074a4be472f7c24a672d5c4d4938a5cac8ab295",
+      "test_ids_sha256": "1d632cccd0fe519091baeaac112361b8b6687c289e35c2dc67bc4bb1063ef1c9"
+    },
+    "Germany|rapeseed": {
+      "status": "completed",
+      "fit": 66,
+      "stop": 14,
+      "test": 15,
+      "fit_ids_sha256": "fe685f02ec8521abbd96180aebafaeb08939eeb5c241a10c40d20f4df0a391cb",
+      "test_ids_sha256": "806a6c2443ae08fb0ae9ae102eaf123ffe06ed8c730bdb61c2b4bb90a3ee4bc3"
+    },
+    "Germany|wheat": {
+      "status": "completed",
+      "fit": 119,
+      "stop": 18,
+      "test": 28,
+      "fit_ids_sha256": "321de343c89931c87fd1591efbc02d6def64a7a959317afecc183cf1b1d7c374",
+      "test_ids_sha256": "16ef3898e82e55a0787ad38440ba64967c72890b05a2a494fb95e37d6d604b05"
+    },
+    "Uruguay|soybean": {
+      "status": "completed",
+      "fit": 346,
+      "stop": 60,
+      "test": 91,
+      "fit_ids_sha256": "d8a5f91b223a62cb230e12de770417729277edc19f4646259c9e728bf1c4be8a",
+      "test_ids_sha256": "16f3c09d9151cf6dd1e39b4a67005e79fffb00c758d8af7721fd798dc4dae03e"
+    }
+  },
+  "pass_gates": {
+    "integrity": true,
+    "beats_training_mean_rmse": true,
+    "bootstrap_ci_excludes_no_improvement": true
+  },
+  "status": "PASS"
+}

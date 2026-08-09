@@ -1,0 +1,130 @@
+{
+  "schema_version": "physcrop_agronomy_kb_risk_v1",
+  "version": "2026.08.03",
+  "review_status": "approved_for_internal_pilot",
+  "scope": "YieldSAT 四国四作物（Argentina/Brazil/Germany/Uruguay × corn/rapeseed/soybean/wheat）低风险现场信息采集；不提供处方，不替代当地农技判断。",
+  "governance": {
+    "owner": "PhysCrop project team",
+    "next_review_date": "2027-01-30",
+    "prohibited_advice": [
+      "在没有田间确认时断言具体病虫害、缺素或水分胁迫",
+      "给出农药、肥料或生长调节剂的具体产品、剂量和施用频次",
+      "绕过当地植保、农技或用水规定直接执行高风险处置",
+      "把模型 pvalue、风险分数或预测区间解释为低产概率或保证范围"
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "FAO-CROPWAT",
+      "organization": "Food and Agriculture Organization of the United Nations",
+      "title": "CROPWAT - Crop water requirements and irrigation scheduling",
+      "url": "https://www.fao.org/land-water/databases-and-software/cropwat/en/",
+      "accessed": "2026-08-03",
+      "scope": "基于作物、土壤和气象信息开展水分需求分析；不用于地块级确诊"
+    },
+    {
+      "source_id": "FAO-ASIS",
+      "organization": "Food and Agriculture Organization of the United Nations",
+      "title": "Agricultural Stress Index System",
+      "url": "https://www.fao.org/giews/earthobservation/asistool.jsp",
+      "accessed": "2026-08-03",
+      "scope": "遥感农业胁迫信息的区域监测语境；不用于地块级病因确诊"
+    },
+    {
+      "source_id": "YIELDSAT-PAPER",
+      "organization": "PhysCrop project",
+      "title": "PhysCrop-Risk: Turning Partial-Season Earth Observation into Calibrated Low-Yield Alerts",
+      "url": "https://arxiv.org/abs/2604.00940",
+      "accessed": "2026-08-03",
+      "scope": "低产风险预警的系统定义、校准与审计边界"
+    }
+  ],
+  "entries": [
+    {
+      "knowledge_id": "KB-RISK-GENERIC-CHECK-V1",
+      "countries": [],
+      "crops": [],
+      "title": "通用低风险现场信息采集",
+      "candidate_issue": "模型给出低产风险信号，需要现场核验补充信息；当前证据不足以判断具体病因。",
+      "required_context": ["country", "crop", "season"],
+      "low_risk_actions": [
+        "在风险区中心、边缘和相邻对照区各拍摄至少一张同角度照片并记录时间与位置。",
+        "记录土壤水分、积排水、灌排设施和近期降水/农事记录。",
+        "记录冠层症状、倒伏、缺苗、斑点或虫口，标注发生范围，不先入为主判断病因。",
+        "在下一次有效卫星观测或 24 至 72 小时内复查，比较风险范围是否持续或扩大。"
+      ],
+      "conditional_actions": [
+        "若症状持续扩大或出现可重复的病虫证据，提交当地农技或植保人员复核后再决定处置。"
+      ],
+      "source_ids": ["FAO-ASIS", "YIELDSAT-PAPER"]
+    },
+    {
+      "knowledge_id": "KB-RISK-SOYBEAN-V1",
+      "countries": ["Argentina", "Brazil", "Uruguay"],
+      "crops": ["soybean"],
+      "title": "大豆低产风险现场核验",
+      "candidate_issue": "大豆田出现低产风险信号，需核验植株密度、结荚情况、水分与病害症状。",
+      "required_context": ["country", "crop", "season"],
+      "low_risk_actions": [
+        "在风险区与对照区分别检查株距、缺苗和结荚差异并拍照。",
+        "检查根层土壤水分、积排水与近期降水记录。",
+        "记录叶片黄化、斑点、萎蔫和虫口，标注发生比例与空间边界。"
+      ],
+      "conditional_actions": [
+        "若发现可重复的病斑或虫体证据，提交当地农技或植保人员复核后再决定防治措施。"
+      ],
+      "source_ids": ["FAO-CROPWAT", "FAO-ASIS", "YIELDSAT-PAPER"]
+    },
+    {
+      "knowledge_id": "KB-RISK-CORN-V1",
+      "countries": ["Argentina", "Brazil"],
+      "crops": ["corn"],
+      "title": "玉米低产风险现场核验",
+      "candidate_issue": "玉米田出现低产风险信号，需核验群体密度、授粉/灌浆表现与水分条件。",
+      "required_context": ["country", "crop", "season"],
+      "low_risk_actions": [
+        "在风险区与对照区分别记录株距、缺苗、空秆和果穗发育情况并拍照。",
+        "检查土壤水分、积排水与近期降水/灌溉记录。",
+        "记录叶片症状、倒伏和虫口，标注发生范围，不先入为主判断病因。"
+      ],
+      "conditional_actions": [
+        "若症状持续扩大或出现可重复的病虫证据，提交当地农技或植保人员复核后再决定处置。"
+      ],
+      "source_ids": ["FAO-CROPWAT", "FAO-ASIS", "YIELDSAT-PAPER"]
+    },
+    {
+      "knowledge_id": "KB-RISK-WHEAT-V1",
+      "countries": ["Argentina", "Brazil", "Germany"],
+      "crops": ["wheat"],
+      "title": "小麦低产风险现场核验",
+      "candidate_issue": "小麦田出现低产风险信号，需核验群体密度、穗部发育与水分/病害症状。",
+      "required_context": ["country", "crop", "season"],
+      "low_risk_actions": [
+        "在风险区与对照区分别记录分蘖/穗数、缺苗和叶色差异并拍照。",
+        "检查根层土壤水分、积排水与近期降水记录。",
+        "记录叶片斑点、黄化、萎蔫和虫口，标注发生范围与空间边界。"
+      ],
+      "conditional_actions": [
+        "若发现可重复的病斑或虫体证据，提交当地农技或植保人员复核后再决定防治措施。"
+      ],
+      "source_ids": ["FAO-CROPWAT", "FAO-ASIS", "YIELDSAT-PAPER"]
+    },
+    {
+      "knowledge_id": "KB-RISK-RAPESEED-V1",
+      "countries": ["Germany"],
+      "crops": ["rapeseed"],
+      "title": "油菜低产风险现场核验",
+      "candidate_issue": "油菜田出现低产风险信号，需核验群体密度、角果发育与水分/病害症状。",
+      "required_context": ["country", "crop", "season"],
+      "low_risk_actions": [
+        "在风险区与对照区分别记录株距、缺苗、角果发育和叶色差异并拍照。",
+        "检查根层土壤水分、积排水与近期降水记录。",
+        "记录叶片斑点、黄化、萎蔫和虫口，标注发生比例与空间边界。"
+      ],
+      "conditional_actions": [
+        "若发现可重复的病斑或虫体证据，提交当地农技或植保人员复核后再决定防治措施。"
+      ],
+      "source_ids": ["FAO-CROPWAT", "FAO-ASIS", "YIELDSAT-PAPER"]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "analysis_status": "post-audit diagnostic; original frozen audit unchanged",
+  "integrity": {
+    "audit_id_match": true,
+    "audit_outcomes_used_for_training_or_selection": false
+  },
+  "original_frozen_policy_intervals": {
+    "watch_any_hit_original_frozen": {
+      "n": 322,
+      "low_n": 74,
+      "normal_n": 248,
+      "tp": 25,
+      "fp": 13,
+      "fn": 49,
+      "tn": 235,
+      "fpr": 0.05241935483870968,
+      "fpr_cp95": [
+        0.028202879865192796,
+        0.08797071285405429
+      ],
+      "sensitivity": 0.33783783783783783,
+      "sensitivity_cp95": [
+        0.23192718054318862,
+        0.4571759536421228
+      ],
+      "precision": 0.6578947368421053,
+      "precision_cp95": [
+        0.4864732448393359,
+        0.8036709070509503
+      ]
+    },
+    "action_two_consecutive_original_frozen": {
+      "n": 322,
+      "low_n": 74,
+      "normal_n": 248,
+      "tp": 8,
+      "fp": 5,
+      "fn": 66,
+      "tn": 243,
+      "fpr": 0.020161290322580645,
+      "fpr_cp95": [
+        0.006577946702923985,
+        0.046419960774351676
+      ],
+      "sensitivity": 0.10810810810810811,
+      "sensitivity_cp95": [
+        0.04784399039492811,
+        0.201950136231846
+      ],
+      "precision": 0.6153846153846154,
+      "precision_cp95": [
+        0.31577760291406304,
+        0.8614206611098394
+      ]
+    }
+  },
+  "common_three_look_cohort": {
+    "field_ids_n": 300,
+    "looks": {
+      "1": {
+        "n": 300,
+        "prevalence": 0.22333333333333333,
+        "rmse": 1.2407220418974232,
+        "r2": 0.7851238259793807,
+        "auroc": 0.7369803343796042,
+        "auprc": 0.4411790547936626
+      },
+      "2": {
+        "n": 300,
+        "prevalence": 0.22333333333333333,
+        "rmse": 1.208350261294801,
+        "r2": 0.7961902539683237,
+        "auroc": 0.7533790276087374,
+        "auprc": 0.4510190896951769
+      },
+      "3": {
+        "n": 300,
+        "prevalence": 0.22333333333333333,
+        "rmse": 1.0887089417478037,
+        "r2": 0.8345514951216552,
+        "auroc": 0.8272372045352636,
+        "auprc": 0.594162411578705
+      }
+    },
+    "paired_change_from_look1": {
+      "2": {
+        "rmse_later_minus_look1_cp95": [
+          -0.09642472215534434,
+          -0.03286630242545885,
+          0.026615842151982094
+        ],
+        "auroc_later_minus_look1_cp95": [
+          -0.012708599457046154,
+          0.016104746317512353,
+          0.04549188934465265
+        ],
+        "auprc_later_minus_look1_cp95": [
+          -0.03955513848490436,
+          0.009186887086960333,
+          0.060107067322070905
+        ]
+      },
+      "3": {
+        "rmse_later_minus_look1_cp95": [
+          -0.2527135654208936,
+          -0.15191589911768444,
+          -0.05373858539669718
+        ],
+        "auroc_later_minus_look1_cp95": [
+          0.04460445955011166,
+          0.08906397110292369,
+          0.1416733110922057
+        ],
+        "auprc_later_minus_look1_cp95": [
+          0.06523532714114713,
+          0.14698501015178106,
+          0.23705598506955608
+        ]
+      }
+    }
+  },
+  "preharvest_lead_time": {
+    "1": {
+      "n": 300,
+      "q05_q25_median_q75_q95_days": [
+        71.95,
+        93.75,
+        107.0,
+        126.0,
+        169.9000000000002
+      ],
+      "minimum_days": 36,
+      "nonpositive_n": 0,
+      "crop_median_days": {
+        "corn": 124.5,
+        "rapeseed": 246.0,
+        "soybean": 107.0,
+        "wheat": 94.0
+      }
+    },
+    "2": {
+      "n": 310,
+      "q05_q25_median_q75_q95_days": [
+        50.45,
+        70.25,
+        86.0,
+        100.75,
+        130.10000000000002
+      ],
+      "minimum_days": 11,
+      "nonpositive_n": 0,
+      "crop_median_days": {
+        "corn": 100.5,
+        "rapeseed": 78.5,
+        "soybean": 87.0,
+        "wheat": 72.0
+      }
+    },
+    "3": {
+      "n": 322,
+      "q05_q25_median_q75_q95_days": [
+        30.0,
+        49.0,
+        62.5,
+        77.0,
+        102.0
+      ],
+      "minimum_days": 1,
+      "nonpositive_n": 0,
+      "crop_median_days": {
+        "corn": 71.0,
+        "rapeseed": 56.5,
+        "soybean": 63.0,
+        "wheat": 56.5
+      }
+    }
+  },
+  "farm_overlap": {
+    "audit_fields": 322,
+    "seen_farm_fields": 321,
+    "unseen_farm_fields": 1,
+    "audit_farms": 53,
+    "seen_farms": 52,
+    "unseen_farms": 1,
+    "adapter_reference_farms": 79,
+    "inference": "insufficient unseen-audit support"
+  }
+}

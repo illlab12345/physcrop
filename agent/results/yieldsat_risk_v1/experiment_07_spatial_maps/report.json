@@ -1,0 +1,52 @@
+{
+  "experiment": 7,
+  "attempt": 4,
+  "status": "PASS",
+  "summary": {
+    "fields": 316,
+    "pixels": 1530144,
+    "training_fields": 1254,
+    "training_pixels": 315089,
+    "mean_field_rmse_spatial": 1.5234002810953244,
+    "mean_field_rmse_uniform": 1.6053084602143544,
+    "mean_field_rmse_ndvi": 1.5671006624079957,
+    "median_within_field_rho": 0.4023567922882485,
+    "median_bottom20_auroc": 0.7315826892745815,
+    "spatial_minus_uniform_bootstrap95": [
+      -0.0979663219029536,
+      -0.08175007917494453,
+      -0.06630678085355887
+    ],
+    "spatial_minus_ndvi_bootstrap95": [
+      -0.05284232228838906,
+      -0.043563881785330494,
+      -0.03477686197748417
+    ],
+    "max_field_mean_preservation_error": 1.7763568394002505e-15
+  },
+  "qualitative_ids": [
+    "Argentina_DUP1_farm2_field46_soybean_2023",
+    "Argentina_DUP1_farm37_field408_soybean_2020",
+    "Argentina_DUP1_farm7_field86_soybean_2024",
+    "Brazil_DUP2_farm2_field50_soybean_2024",
+    "Brazil_DUP2_farm4_field88_soybean_2019",
+    "Brazil_DUP2_farm6_field293_wheat_2021",
+    "Germany_DUP3_farm1_field39_wheat_2019",
+    "Uruguay_DUP4_farm10_field408_soybean_2018"
+  ],
+  "excluded_training_fields": 0,
+  "excluded_challenge_fields": 0,
+  "integrity": {
+    "audit_targets_read": false,
+    "future_images_used": false,
+    "pixel_iid_inference": false
+  },
+  "pass_gates": {
+    "support": true,
+    "mean_preservation": true,
+    "beats_uniform_ci": true,
+    "median_rho_ge_0.20": true,
+    "median_bottom20_auroc_ge_0.65": true,
+    "field_clustered_inference_only": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "results/yieldsat_risk_v1/final_audit/final_predictions.csv": "d6e224de3ef308f9abf49a685af8bb7512bdfc73797eaf9129b09aba962b0560",
+  "results/yieldsat_risk_v1/post_audit_p0p1/p0b_uniform_audit_predictions.csv": "293b9a1fc27f2e6c98f9b2e2f6b6947eb67c46ae149118444c587d4b7cd03fcb",
+  "results/yieldsat_risk_v1/experiment_07_spatial_maps/field_metrics.csv": "a794579bbf0cc932980a8614db72fd5b16a03357fa675454f9cbe1d4a383787d",
+  "results/yieldsat_risk_v1/experiment_02_early_curve/milestones.json": "06f2e0e222c5bfe672a434f43eb8f5d6ed4d2704fec297901c4559fa68f1ba50",
+  "results/yieldsat_risk_v1/experiment_02_early_curve/target_reference.json": "1d442be9ff271790764d8a7c29fa71d12cfb29aa1b3faedefbe798763e5fdabb",
+  "results/yieldsat_risk_v1/final_audit/freeze_manifest.json": "8613759cf03334ccd0fd82fbd8d13d536dbe863446e8f02dc4697584587088a5",
+  "results/yieldsat_risk_v1/post_audit_p0p1/p0a_lead_times.csv": "54ee2478dd9791c438038ede68b491a50f81c3827ff09dafdb15e9b18cbef156"
+}

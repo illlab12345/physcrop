@@ -1,0 +1,38 @@
+{
+  "corn": {
+    "training_fields": 171,
+    "median_training_max_gdd": 2646.78759765625,
+    "looks_gdd": [
+      926.3756591796874,
+      1323.393798828125,
+      1720.4119384765625
+    ]
+  },
+  "rapeseed": {
+    "training_fields": 69,
+    "median_training_max_gdd": 1770.927490234375,
+    "looks_gdd": [
+      619.8246215820312,
+      885.4637451171875,
+      1151.102868652344
+    ]
+  },
+  "soybean": {
+    "training_fields": 687,
+    "median_training_max_gdd": 2716.902587890625,
+    "looks_gdd": [
+      950.9159057617187,
+      1358.4512939453125,
+      1765.9866821289063
+    ]
+  },
+  "wheat": {
+    "training_fields": 327,
+    "median_training_max_gdd": 1624.7471923828125,
+    "looks_gdd": [
+      568.6615173339843,
+      812.3735961914062,
+      1056.085675048828
+    ]
+  }
+}

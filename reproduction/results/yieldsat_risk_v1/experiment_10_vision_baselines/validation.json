@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "row_count_316": true,
+    "field_order": true,
+    "targets": true,
+    "agrifm_frozen_context_finite": true,
+    "agrifm_frozen_context_overall_metrics": true,
+    "agrifm_frozen_context_group_metrics": true,
+    "convlstm_context_finite": true,
+    "convlstm_context_overall_metrics": true,
+    "convlstm_context_group_metrics": true,
+    "all_cached_frames_causal": true,
+    "report_pass": true
+  }
+}

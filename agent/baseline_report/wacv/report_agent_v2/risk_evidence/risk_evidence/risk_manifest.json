@@ -1,0 +1,17 @@
+{
+  "schema_version": "physcrop_risk_evidence_manifest_v1",
+  "adapter_version": "yieldsat_risk_adapter_v1.0",
+  "generated_at": "2026-08-04T04:35:43+00:00",
+  "field_count": 322,
+  "field_ids_sha256": "a2913023c1f627e991e012dc6059d559148a50105c5d914b301adf730a4ea526",
+  "look_row_count": 932,
+  "decision_counts": {
+    "watch_original": 38,
+    "action_original": 13,
+    "watch_clean": 35,
+    "action_clean": 12
+  },
+  "spatial_available_fields": 0,
+  "mode": "prospective_inference + retrospective_audit",
+  "outcome_leakage_check": "passed_for_all_prospective_files"
+}

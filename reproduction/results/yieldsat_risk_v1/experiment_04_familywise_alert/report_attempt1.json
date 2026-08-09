@@ -1,0 +1,375 @@
+{
+  "experiment": 4,
+  "status": "FAIL",
+  "primary_policy": "alpha_spending",
+  "policy_summaries": {
+    "naive": {
+      "n": 316,
+      "low_yield_n": 61,
+      "normal_n": 255,
+      "tp": 27,
+      "fp": 11,
+      "tn": 244,
+      "fn": 34,
+      "fpr_field_season": 0.043137254901960784,
+      "fpr_upper95_one_sided": 0.07039246138642119,
+      "sensitivity": 0.4426229508196721,
+      "precision": 0.7105263157894737,
+      "specificity": 0.9568627450980393,
+      "earliest_alert_look_median": 3.0,
+      "supported_group_fpr": {
+        "Argentina|corn": {
+          "normal_n": 21,
+          "false_alerts": 2,
+          "fpr": 0.09523809523809523
+        },
+        "Argentina|soybean": {
+          "normal_n": 51,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|corn": {
+          "normal_n": 18,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|soybean": {
+          "normal_n": 33,
+          "false_alerts": 4,
+          "fpr": 0.12121212121212122
+        },
+        "Brazil|wheat": {
+          "normal_n": 15,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|rapeseed": {
+          "normal_n": 10,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|wheat": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Uruguay|soybean": {
+          "normal_n": 78,
+          "false_alerts": 3,
+          "fpr": 0.038461538461538464
+        }
+      },
+      "worst_supported_group_fpr": 0.12121212121212122
+    },
+    "marginal_05": {
+      "n": 316,
+      "low_yield_n": 61,
+      "normal_n": 255,
+      "tp": 0,
+      "fp": 0,
+      "tn": 255,
+      "fn": 61,
+      "fpr_field_season": 0.0,
+      "fpr_upper95_one_sided": 0.011679231744630137,
+      "sensitivity": 0.0,
+      "precision": 0.0,
+      "specificity": 1.0,
+      "earliest_alert_look_median": null,
+      "supported_group_fpr": {
+        "Argentina|corn": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Argentina|soybean": {
+          "normal_n": 51,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|corn": {
+          "normal_n": 18,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|soybean": {
+          "normal_n": 33,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|wheat": {
+          "normal_n": 15,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|rapeseed": {
+          "normal_n": 10,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|wheat": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Uruguay|soybean": {
+          "normal_n": 78,
+          "false_alerts": 0,
+          "fpr": 0.0
+        }
+      },
+      "worst_supported_group_fpr": 0.0
+    },
+    "bonferroni_equal": {
+      "n": 316,
+      "low_yield_n": 61,
+      "normal_n": 255,
+      "tp": 0,
+      "fp": 0,
+      "tn": 255,
+      "fn": 61,
+      "fpr_field_season": 0.0,
+      "fpr_upper95_one_sided": 0.011679231744630137,
+      "sensitivity": 0.0,
+      "precision": 0.0,
+      "specificity": 1.0,
+      "earliest_alert_look_median": null,
+      "supported_group_fpr": {
+        "Argentina|corn": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Argentina|soybean": {
+          "normal_n": 51,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|corn": {
+          "normal_n": 18,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|soybean": {
+          "normal_n": 33,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|wheat": {
+          "normal_n": 15,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|rapeseed": {
+          "normal_n": 10,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|wheat": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Uruguay|soybean": {
+          "normal_n": 78,
+          "false_alerts": 0,
+          "fpr": 0.0
+        }
+      },
+      "worst_supported_group_fpr": 0.0
+    },
+    "alpha_spending": {
+      "n": 316,
+      "low_yield_n": 61,
+      "normal_n": 255,
+      "tp": 0,
+      "fp": 0,
+      "tn": 255,
+      "fn": 61,
+      "fpr_field_season": 0.0,
+      "fpr_upper95_one_sided": 0.011679231744630137,
+      "sensitivity": 0.0,
+      "precision": 0.0,
+      "specificity": 1.0,
+      "earliest_alert_look_median": null,
+      "supported_group_fpr": {
+        "Argentina|corn": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Argentina|soybean": {
+          "normal_n": 51,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|corn": {
+          "normal_n": 18,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|soybean": {
+          "normal_n": 33,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|wheat": {
+          "normal_n": 15,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|rapeseed": {
+          "normal_n": 10,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|wheat": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Uruguay|soybean": {
+          "normal_n": 78,
+          "false_alerts": 0,
+          "fpr": 0.0
+        }
+      },
+      "worst_supported_group_fpr": 0.0
+    },
+    "alpha_spending_persistent": {
+      "n": 316,
+      "low_yield_n": 61,
+      "normal_n": 255,
+      "tp": 0,
+      "fp": 0,
+      "tn": 255,
+      "fn": 61,
+      "fpr_field_season": 0.0,
+      "fpr_upper95_one_sided": 0.011679231744630137,
+      "sensitivity": 0.0,
+      "precision": 0.0,
+      "specificity": 1.0,
+      "earliest_alert_look_median": null,
+      "supported_group_fpr": {
+        "Argentina|corn": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Argentina|soybean": {
+          "normal_n": 51,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|corn": {
+          "normal_n": 18,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|soybean": {
+          "normal_n": 33,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Brazil|wheat": {
+          "normal_n": 15,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|rapeseed": {
+          "normal_n": 10,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Germany|wheat": {
+          "normal_n": 21,
+          "false_alerts": 0,
+          "fpr": 0.0
+        },
+        "Uruguay|soybean": {
+          "normal_n": 78,
+          "false_alerts": 0,
+          "fpr": 0.0
+        }
+      },
+      "worst_supported_group_fpr": 0.0
+    }
+  },
+  "stage_reports": {
+    "1": {
+      "marginal_05": {
+        "alpha": 0.05,
+        "normal_n": 241,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      },
+      "bonferroni_equal": {
+        "alpha": 0.016666666666666666,
+        "normal_n": 241,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      },
+      "alpha_spending": {
+        "alpha": 0.01,
+        "normal_n": 241,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      }
+    },
+    "2": {
+      "marginal_05": {
+        "alpha": 0.05,
+        "normal_n": 253,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      },
+      "bonferroni_equal": {
+        "alpha": 0.016666666666666666,
+        "normal_n": 253,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      },
+      "alpha_spending": {
+        "alpha": 0.015,
+        "normal_n": 253,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      }
+    },
+    "3": {
+      "marginal_05": {
+        "alpha": 0.05,
+        "normal_n": 255,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      },
+      "bonferroni_equal": {
+        "alpha": 0.016666666666666666,
+        "normal_n": 255,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      },
+      "alpha_spending": {
+        "alpha": 0.025,
+        "normal_n": 255,
+        "false_alerts": 0,
+        "stage_fpr": 0.0
+      }
+    }
+  },
+  "integrity": {
+    "audit_targets_read": false,
+    "conformal_evaluation_field_overlap": 0,
+    "alpha_spending_sum": 0.05,
+    "false_alert_implies_noncoverage": true,
+    "causal_frozen_look_models": true
+  },
+  "pass_gates": {
+    "integrity": true,
+    "fpr_le_0.05": true,
+    "fpr_upper95_le_0.08": true,
+    "nondegenerate_sensitivity": false,
+    "precision_ge_0.50": false,
+    "worst_group_fpr_le_0.15": true
+  },
+  "validity_boundary": "Union-bound FWER requires the corresponding split-conformal exchangeability assumptions."
+}

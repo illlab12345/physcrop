@@ -1,0 +1,17 @@
+# PhysCrop-Risk reproduction + agent core dependencies
+numpy
+scipy
+scikit-learn
+joblib
+tifffile
+matplotlib
+pillow
+reportlab
+
+# Optional: Experiment 10 vision baselines (AgriFM / ConvLSTM)
+torch
+
+# Optional: frozen AgriFM encoder dependencies
+einops
+mmengine
+timm

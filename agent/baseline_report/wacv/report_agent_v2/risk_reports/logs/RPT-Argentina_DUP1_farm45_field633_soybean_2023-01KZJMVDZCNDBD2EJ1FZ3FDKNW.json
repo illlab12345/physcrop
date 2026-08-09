@@ -1,0 +1,31 @@
+{
+  "event_key": "Argentina_DUP1_farm45_field633_soybean_2023",
+  "report_id": "RPT-Argentina_DUP1_farm45_field633_soybean_2023-01KZJMVDZCNDBD2EJ1FZ3FDKNW",
+  "provider": "local",
+  "model": "rules-v3",
+  "generator": "deterministic_fallback",
+  "stages": [
+    {
+      "stage": "queued",
+      "message": "任务已排队",
+      "at": "2026-08-09T06:55:03+00:00"
+    },
+    {
+      "stage": "preparing",
+      "message": "正在准备证据与知识库…",
+      "at": "2026-08-09T06:55:03+00:00"
+    },
+    {
+      "stage": "validating",
+      "message": "正在执行事实与安全校验…",
+      "at": "2026-08-09T06:55:03+00:00"
+    }
+  ],
+  "validation": {
+    "passes": true,
+    "errors": [],
+    "warnings": []
+  },
+  "warning": null,
+  "created_at": "2026-08-09T06:55:03+00:00"
+}

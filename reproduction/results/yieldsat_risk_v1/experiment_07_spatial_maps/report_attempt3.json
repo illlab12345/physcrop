@@ -1,0 +1,47 @@
+{
+  "experiment": 7,
+  "status": "FAIL",
+  "summary": {
+    "fields": 80,
+    "pixels": 488408,
+    "training_fields": 333,
+    "training_pixels": 84020,
+    "mean_field_rmse_spatial": 1.301575676677458,
+    "mean_field_rmse_uniform": 1.3731015442184187,
+    "mean_field_rmse_ndvi": 1.327888260781765,
+    "median_within_field_rho": 0.40843676607129903,
+    "median_bottom20_auroc": 0.7244419004581504,
+    "spatial_minus_uniform_bootstrap95": [
+      -0.09560812127615384,
+      -0.07152759052716338,
+      -0.04813587574198974
+    ],
+    "spatial_minus_ndvi_bootstrap95": [
+      -0.039739149865868004,
+      -0.02646436293531798,
+      -0.014136273544999814
+    ],
+    "max_field_mean_preservation_error": 1.7763568394002505e-15
+  },
+  "qualitative_ids": [
+    "Argentina_DUP1_farm2_field46_soybean_2023",
+    "Argentina_DUP1_farm7_field86_soybean_2024",
+    "Brazil_DUP2_farm2_field50_soybean_2024",
+    "Brazil_DUP2_farm4_field88_soybean_2019"
+  ],
+  "excluded_training_fields": 921,
+  "excluded_challenge_fields": 236,
+  "integrity": {
+    "audit_targets_read": false,
+    "future_images_used": false,
+    "pixel_iid_inference": false
+  },
+  "pass_gates": {
+    "support": false,
+    "mean_preservation": true,
+    "beats_uniform_ci": true,
+    "median_rho_ge_0.20": true,
+    "median_bottom20_auroc_ge_0.65": true,
+    "field_clustered_inference_only": true
+  }
+}

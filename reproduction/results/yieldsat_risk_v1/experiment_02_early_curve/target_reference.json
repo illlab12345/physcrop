@@ -1,0 +1,121 @@
+{
+  "normalization": {
+    "Argentina|corn": {
+      "n": 96,
+      "mean": 8.691955015063286,
+      "std": 3.0356501764813983
+    },
+    "Argentina|soybean": {
+      "n": 220,
+      "mean": 3.512830210273916,
+      "std": 1.2421128145056597
+    },
+    "Argentina|wheat": {
+      "n": 83,
+      "mean": 4.135075228041913,
+      "std": 2.179531853468295
+    },
+    "Brazil|corn": {
+      "n": 75,
+      "mean": 6.680697711308797,
+      "std": 1.846417566732138
+    },
+    "Brazil|soybean": {
+      "n": 177,
+      "mean": 4.141856733015028,
+      "std": 0.6296266624077965
+    },
+    "Brazil|wheat": {
+      "n": 109,
+      "mean": 3.7483099491224374,
+      "std": 0.8089417199641505
+    },
+    "Germany|rapeseed": {
+      "n": 69,
+      "mean": 4.479201480962228,
+      "std": 1.2720271259483709
+    },
+    "Germany|wheat": {
+      "n": 135,
+      "mean": 9.758280831796151,
+      "std": 1.7884473918301897
+    },
+    "Uruguay|soybean": {
+      "n": 290,
+      "mean": 2.4098708967710363,
+      "std": 1.0882599600054588
+    }
+  },
+  "low_yield_thresholds": {
+    "Argentina|corn": {
+      "level": "country_crop",
+      "n": 96,
+      "q20": 6.163111209869385
+    },
+    "Argentina|soybean": {
+      "level": "country_crop",
+      "n": 220,
+      "q20": 2.4290585041046144
+    },
+    "Argentina|wheat": {
+      "level": "country_crop",
+      "n": 83,
+      "q20": 2.029330730438233
+    },
+    "Brazil|corn": {
+      "level": "country_crop",
+      "n": 75,
+      "q20": 4.840037059783936
+    },
+    "Brazil|soybean": {
+      "level": "country_crop",
+      "n": 177,
+      "q20": 3.656761693954468
+    },
+    "Brazil|wheat": {
+      "level": "country_crop",
+      "n": 109,
+      "q20": 3.056740236282349
+    },
+    "Germany|rapeseed": {
+      "level": "country_crop",
+      "n": 69,
+      "q20": 3.4644815921783447
+    },
+    "Germany|wheat": {
+      "level": "country_crop",
+      "n": 135,
+      "q20": 8.544622993469238
+    },
+    "Uruguay|soybean": {
+      "level": "country_crop",
+      "n": 290,
+      "q20": 1.3531898975372314
+    },
+    "crop|corn": {
+      "level": "crop",
+      "n": 171,
+      "q20": 5.332284450531006
+    },
+    "crop|rapeseed": {
+      "level": "crop",
+      "n": 69,
+      "q20": 3.4644815921783447
+    },
+    "crop|soybean": {
+      "level": "crop",
+      "n": 687,
+      "q20": 1.9465742826461796
+    },
+    "crop|wheat": {
+      "level": "crop",
+      "n": 327,
+      "q20": 3.304673099517822
+    },
+    "global": {
+      "level": "global",
+      "n": 1254,
+      "q20": 2.5353811740875245
+    }
+  }
+}

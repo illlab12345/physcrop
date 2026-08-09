@@ -1,0 +1,131 @@
+{
+  "schema_version": "physcrop_risk_alert_evidence_v1",
+  "evidence_id": "ev-Brazil_DUP2_farm5_field229_wheat_2019",
+  "mode": "prospective_inference",
+  "identity": {
+    "organization_id": "yieldsat-demo",
+    "farm_id": "Brazil_DUP2_farm5",
+    "field_id": "Brazil_DUP2_farm5_field229_wheat_2019",
+    "field_number": "229",
+    "country": "Brazil",
+    "crop": "wheat",
+    "season": "2019"
+  },
+  "current_information_boundary": {
+    "look": 3,
+    "look_type": "crop_specific_absolute_gdd",
+    "gdd_cutoff": 1056.085675048828,
+    "cutoff_date": "2019-07-09",
+    "latest_used_acquisition_date": "2019-07-09",
+    "preharvest_status": "unknown_in_prospective_mode"
+  },
+  "model_evidence": {
+    "prediction_t_ha": 3.735588116987325,
+    "training_defined_low_yield_cutoff_t_ha": 3.056740236282349,
+    "risk_score": -0.8391802078585592,
+    "null_pvalue": 0.41743119266055045,
+    "look_alpha": 0.025,
+    "watch": 0,
+    "watch_original": 0,
+    "action": 0,
+    "action_original": 0,
+    "persistence_required": 2,
+    "decision_policy": "post_audit_clean_null",
+    "frozen_policy": "original_frozen"
+  },
+  "look_history": [
+    {
+      "look": 1,
+      "look_type": "crop_specific_absolute_gdd",
+      "gdd_cutoff": 568.6615173339843,
+      "prediction_t_ha": 3.5562958549720323,
+      "low_yield_cutoff_t_ha": 3.056740236282349,
+      "risk_score": -0.6175421620136269,
+      "null_pvalue": 0.1935483870967742,
+      "alpha": 0.01,
+      "watch_original": 0,
+      "action_original": 0,
+      "watch_clean": 0,
+      "calibration_method": "global_raw",
+      "baseline_t_ha": 3.7483099491224374,
+      "upper_90": 4.8765130297872075,
+      "upper_95": 5.724272926756055,
+      "cutoff_date": "2019-05-25"
+    },
+    {
+      "look": 2,
+      "look_type": "crop_specific_absolute_gdd",
+      "gdd_cutoff": 812.3735961914062,
+      "prediction_t_ha": 3.8311929394864954,
+      "low_yield_cutoff_t_ha": 3.056740236282349,
+      "risk_score": -0.9573652638888097,
+      "null_pvalue": 0.45871559633027525,
+      "alpha": 0.015,
+      "watch_original": 0,
+      "action_original": 0,
+      "watch_clean": 0,
+      "calibration_method": "hierarchy_power50",
+      "baseline_t_ha": 3.7483099491224374,
+      "upper_90": 4.773819271881541,
+      "upper_95": 5.807500971382818,
+      "cutoff_date": "2019-06-19"
+    },
+    {
+      "look": 3,
+      "look_type": "crop_specific_absolute_gdd",
+      "gdd_cutoff": 1056.085675048828,
+      "prediction_t_ha": 3.735588116987325,
+      "low_yield_cutoff_t_ha": 3.056740236282349,
+      "risk_score": -0.8391802078585592,
+      "null_pvalue": 0.41743119266055045,
+      "alpha": 0.025,
+      "watch_original": 0,
+      "action_original": 0,
+      "watch_clean": 0,
+      "calibration_method": "global_raw",
+      "baseline_t_ha": 3.7483099491224374,
+      "upper_90": 5.417332670356025,
+      "upper_95": 6.246396561130691,
+      "cutoff_date": "2019-07-09"
+    }
+  ],
+  "uncertainty": {
+    "method": "one_sided_split_conformal",
+    "upper_90": 5.417332670356025,
+    "upper_95": 6.246396561130691,
+    "interpretation": "upper prediction evidence, not event probability"
+  },
+  "spatial_evidence": {
+    "available": false,
+    "map_asset_id": null,
+    "pixels": null,
+    "rmse_spatial_t_ha": null,
+    "r2_spatial": null,
+    "within_field_rho": null,
+    "bottom20_auroc": null,
+    "interpretation_boundary": "relative within-field evidence; not a causal or disease map"
+  },
+  "data_quality": {
+    "frozen_results_only": true,
+    "look_count": 3,
+    "missing_looks": [],
+    "spatial_available": false,
+    "per_look_observation_counts": "not_available_in_frozen_csv",
+    "limitations": [
+      "证据由冻结审计结果重建；不暴露逐观测期的观测数量。",
+      "p 值是与参考分布比较的越界证据，不是低产概率。",
+      "空间指标是用于定位的田块级证据，不是诊断依据。"
+    ]
+  },
+  "provenance": {
+    "model_hash_look1": "aaa8c605843d218eeb6bbac9a878c2b3d0513619bbdcee5fb3c26d145c7e7dd7",
+    "model_hash_look2": "e69cd02ca307da5738069f363b5e4b116fbc22c113f751249ab01697d594c6b2",
+    "model_hash_look3": "8330a7e956eb9dd1dddd4b82dc1c16dcef39be6140bf4ebbebcc77958c82f881",
+    "feature_hash": "07be1d8d56e3141cc9181fb7ca77181d4cf220bb8c3e50a4c119158d1be1ebab",
+    "protocol_hash": "156df3719b617cc217d429e9c6fa61420323f656b09fe14c8037904346efa299",
+    "freeze_manifest_sha256": "8613759cf03334ccd0fd82fbd8d13d536dbe863446e8f02dc4697584587088a5",
+    "adapter_version": "yieldsat_risk_adapter_v1.0",
+    "decision_policy_version": "original_frozen|post_audit_clean_null"
+  },
+  "evidence_hash": "1fa84343beb64710962180dc647840d9c19d851d2143c50907936ec7f06cf041"
+}

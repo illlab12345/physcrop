@@ -1,0 +1,15 @@
+{
+  "schema_version": "physcrop_observation_snapshot_v1",
+  "snapshot_id": "01KZJMVDN214ZRNKRW1VEG4D4S",
+  "event_key": "Argentina_DUP1_farm45_field633_soybean_2023",
+  "observer": "本地演示用户",
+  "soil_moisture": "偏干",
+  "standing_water": "未见",
+  "canopy_symptoms": "叶色略淡",
+  "notes": "现场快照测试",
+  "photo_refs": [],
+  "open_questions": [],
+  "created_at": "2026-08-09T06:55:03+00:00",
+  "immutable": true,
+  "does_not_change_model_evidence": true
+}

@@ -1,0 +1,215 @@
+{
+  "experiment": 8,
+  "status": "PASS",
+  "loyo_summary": {
+    "n": 1849,
+    "rmse": 1.3250765113509453,
+    "r2": 0.7790125243302157,
+    "spearman_rho": 0.797780323705176,
+    "baseline_rmse": 1.638951801367782,
+    "macro_year_r2": 0.7223295711793325,
+    "rmse_delta_bootstrap95": [
+      -0.3566900022315202,
+      -0.3137817525836273,
+      -0.27122407938336834
+    ]
+  },
+  "loyo_by_year": {
+    "2016": {
+      "n": 42,
+      "rmse": 2.03059016156967,
+      "r2": 0.705164850820799,
+      "spearman_rho": 0.8283769548658942,
+      "baseline_rmse": 2.0201420189827806,
+      "auroc": 0.8448979591836734,
+      "hist_weight": 0.0,
+      "look_gdd": {
+        "corn": 1720.4119384765625,
+        "rapeseed": 1169.720068359375,
+        "soybean": 1765.9866821289063,
+        "wheat": 1056.085675048828
+      }
+    },
+    "2017": {
+      "n": 106,
+      "rmse": 1.4366659825659986,
+      "r2": 0.8073966454545912,
+      "spearman_rho": 0.8522507998085498,
+      "baseline_rmse": 1.7782880663546545,
+      "auroc": 0.7212572373862697,
+      "hist_weight": 0.7000000000000001,
+      "look_gdd": {
+        "corn": 1721.055194091797,
+        "rapeseed": 1121.682553100586,
+        "soybean": 1771.3137939453125,
+        "wheat": 1061.8463317871094
+      }
+    },
+    "2018": {
+      "n": 353,
+      "rmse": 1.194103430049812,
+      "r2": 0.7844084720061252,
+      "spearman_rho": 0.7633613411678082,
+      "baseline_rmse": 1.5630995480869272,
+      "auroc": 0.7663382594417076,
+      "hist_weight": 0.0,
+      "look_gdd": {
+        "corn": 1721.055194091797,
+        "rapeseed": 1137.061853027344,
+        "soybean": 1716.4371948242188,
+        "wheat": 1074.135433959961
+      }
+    },
+    "2019": {
+      "n": 306,
+      "rmse": 1.3027929196166792,
+      "r2": 0.7350421813764203,
+      "spearman_rho": 0.6460478055696035,
+      "baseline_rmse": 1.3722554991461364,
+      "auroc": 0.7891681363903585,
+      "hist_weight": 0.0,
+      "look_gdd": {
+        "corn": 1732.3453735351563,
+        "rapeseed": 1145.7267211914063,
+        "soybean": 1771.3137939453125,
+        "wheat": 1056.085675048828
+      }
+    },
+    "2020": {
+      "n": 201,
+      "rmse": 1.2689961799637426,
+      "r2": 0.7858463034154326,
+      "spearman_rho": 0.8387054824885475,
+      "baseline_rmse": 1.6343105333908825,
+      "auroc": 0.888663967611336,
+      "hist_weight": 0.1,
+      "look_gdd": {
+        "corn": 1723.6125061035157,
+        "rapeseed": 1170.9972564697266,
+        "soybean": 1777.184423828125,
+        "wheat": 1055.0030029296875
+      }
+    },
+    "2021": {
+      "n": 290,
+      "rmse": 1.1351467425577586,
+      "r2": 0.7630311101016284,
+      "spearman_rho": 0.8475589729838109,
+      "baseline_rmse": 1.322113548165886,
+      "auroc": 0.6728110599078341,
+      "hist_weight": 0.0,
+      "look_gdd": {
+        "corn": 1703.6520629882814,
+        "rapeseed": 1152.807650756836,
+        "soybean": 1753.785693359375,
+        "wheat": 1047.3113891601563
+      }
+    },
+    "2022": {
+      "n": 285,
+      "rmse": 1.2220152923353116,
+      "r2": 0.807888223826859,
+      "spearman_rho": 0.7868019304639021,
+      "baseline_rmse": 1.6497166066854962,
+      "auroc": 0.8481909328683522,
+      "hist_weight": 0.0,
+      "look_gdd": {
+        "corn": 1703.6520629882814,
+        "rapeseed": 1154.0484985351563,
+        "soybean": 1759.7872436523437,
+        "wheat": 1056.7282165527345
+      }
+    },
+    "2023": {
+      "n": 184,
+      "rmse": 1.6874717239229156,
+      "r2": 0.3661796597999617,
+      "spearman_rho": 0.8135462618712798,
+      "baseline_rmse": 2.2028050516922972,
+      "auroc": 0.7825106786900806,
+      "hist_weight": 0.1,
+      "look_gdd": {
+        "corn": 1721.055194091797,
+        "rapeseed": 1151.102868652344,
+        "soybean": 1765.9866821289063,
+        "wheat": 1055.841845703125
+      }
+    },
+    "2024": {
+      "n": 82,
+      "rmse": 1.501831104278247,
+      "r2": 0.7460086938121749,
+      "spearman_rho": 0.8274724915923859,
+      "baseline_rmse": 1.941676568202245,
+      "auroc": 0.8946969696969698,
+      "hist_weight": 0.2,
+      "look_gdd": {
+        "corn": 1721.6984497070314,
+        "rapeseed": 1151.102868652344,
+        "soybean": 1773.1632629394533,
+        "wheat": 1056.085675048828
+      }
+    }
+  },
+  "unseen_farm": {
+    "n": 59,
+    "rmse": 1.0592618850813325,
+    "r2": 0.7086151436886077,
+    "spearman_rho": 0.6983635300993573,
+    "farms": 16,
+    "auroc": 0.754360465116279
+  },
+  "loco_by_country": {
+    "Argentina": {
+      "n": 634,
+      "rmse": 2.038569082431706,
+      "r2": 0.5229953534625353,
+      "spearman_rho": 0.7683274258889331,
+      "baseline_rmse": 2.4839822598141175,
+      "beats_crop_climatology": true,
+      "hist_weight": 0.6000000000000001
+    },
+    "Brazil": {
+      "n": 456,
+      "rmse": 1.9275454048690341,
+      "r2": -0.5355609293449812,
+      "spearman_rho": 0.41750255963085636,
+      "baseline_rmse": 2.5742212942776925,
+      "beats_crop_climatology": true,
+      "hist_weight": 0.2
+    },
+    "Germany": {
+      "n": 165,
+      "rmse": 5.588019239455966,
+      "r2": -8.016394055343893,
+      "spearman_rho": 0.3014841860686338,
+      "baseline_rmse": 6.0831018002962916,
+      "beats_crop_climatology": true,
+      "hist_weight": 0.4
+    },
+    "Uruguay": {
+      "n": 497,
+      "rmse": 1.1310958135457718,
+      "r2": -0.10593666856543305,
+      "spearman_rho": 0.6427856880888909,
+      "baseline_rmse": 1.7478675767741603,
+      "beats_crop_climatology": true,
+      "hist_weight": 0.0
+    }
+  },
+  "frozen_challenge_worst_group_r2": 0.14898909407403282,
+  "integrity": {
+    "audit_targets_read": false,
+    "loyo_recomputes_milestones_and_stats": true,
+    "rapeseed_loco_excluded_without_source_crop": true,
+    "legacy_farm_overlap_disclosed": true
+  },
+  "pass_gates": {
+    "loyo_support": true,
+    "loyo_macro_year_r2_positive": true,
+    "loyo_beats_climatology_ci": true,
+    "unseen_farm": true,
+    "loco_support_and_improvement": true,
+    "worst_group_positive": true
+  }
+}

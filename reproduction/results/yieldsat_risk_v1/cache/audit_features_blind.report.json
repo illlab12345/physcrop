@@ -1,0 +1,55 @@
+{
+  "roles": [
+    "audit_validation"
+  ],
+  "requested_fields": 323,
+  "cached_fields": 322,
+  "excluded_fields": 1,
+  "include_target": false,
+  "audit_targets_read": false,
+  "dynamic_features": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B8A",
+    "B09",
+    "B11",
+    "B12",
+    "NDVI",
+    "NDMI",
+    "NDRE",
+    "EVI",
+    "valid_fraction",
+    "cum_gdd",
+    "cum_precip_mm"
+  ],
+  "static_features": [
+    "soil_cec",
+    "soil_cfvo",
+    "soil_clay",
+    "soil_nitrogen",
+    "soil_phh2o",
+    "soil_sand",
+    "soil_silt",
+    "soil_soc",
+    "dem_aspect",
+    "dem_curvature",
+    "dem_dem",
+    "dem_slope",
+    "dem_twi",
+    "area_ha",
+    "circularity"
+  ],
+  "output_sha256": "07be1d8d56e3141cc9181fb7ca77181d4cf220bb8c3e50a4c119158d1be1ebab",
+  "errors": [
+    {
+      "field_id": "Brazil_DUP2_farm2_field19_soybean_2017",
+      "error": "fewer_than_four_usable_acquisitions"
+    }
+  ]
+}

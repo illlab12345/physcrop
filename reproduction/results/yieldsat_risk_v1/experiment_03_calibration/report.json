@@ -1,0 +1,1561 @@
+{
+  "experiment": 3,
+  "attempt": 4,
+  "predictor": "early_stop_selected_dual_tree",
+  "selected_methods_by_look": {
+    "1": "global_raw",
+    "2": "hierarchy_power50",
+    "3": "global_raw"
+  },
+  "status": "PASS",
+  "look_reports": {
+    "1": {
+      "calibration_n": 118,
+      "evaluation_n": 291,
+      "methods": {
+        "0.90": {
+          "global_raw": {
+            "n": 291,
+            "coverage": 0.9106529209621993,
+            "mean_adjustment": 1.3202171748151752,
+            "median_adjustment": 1.3202171748151752,
+            "macro_group_coverage": 0.8910756006603046,
+            "worst_group_coverage": 0.76,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.984375,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.76,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 1.3202171748151754
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8421052631578947,
+                "mean_adjustment": 1.3202171748151754
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 1.0,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.7857142857142857,
+                "mean_adjustment": 1.3202171748151754
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 0.8333333333333334,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9230769230769231,
+                "mean_adjustment": 1.320217174815175
+              }
+            }
+          },
+          "crop_raw": {
+            "n": 291,
+            "coverage": 0.8969072164948454,
+            "mean_adjustment": 1.2452209824853593,
+            "median_adjustment": 1.2003056804856342,
+            "macro_group_coverage": 0.8832631006603046,
+            "worst_group_coverage": 0.76,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.921875,
+                "mean_adjustment": 1.2003056804856342
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.76,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 1.2003056804856342
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8421052631578947,
+                "mean_adjustment": 1.3202171748151754
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 1.0,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.7857142857142857,
+                "mean_adjustment": 1.3202171748151754
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 0.8333333333333334,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9230769230769231,
+                "mean_adjustment": 1.200305680485634
+              }
+            }
+          },
+          "hierarchy_raw": {
+            "n": 291,
+            "coverage": 0.9140893470790378,
+            "mean_adjustment": 1.318152258061436,
+            "median_adjustment": 1.3202171748151752,
+            "macro_group_coverage": 0.8924492270339309,
+            "worst_group_coverage": 0.76,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.984375,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.76,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 1.2003056804856342
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8421052631578947,
+                "mean_adjustment": 1.3202171748151754
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 1.0,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.7857142857142857,
+                "mean_adjustment": 1.3202171748151754
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 0.8333333333333334,
+                "mean_adjustment": 1.3202171748151752
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9340659340659341,
+                "mean_adjustment": 1.3491921151619828
+              }
+            }
+          },
+          "hierarchy_scaled": {
+            "n": 291,
+            "coverage": 0.9450171821305842,
+            "mean_adjustment": 1.5734332111443758,
+            "median_adjustment": 1.4743219026367171,
+            "macro_group_coverage": 0.936673176664953,
+            "worst_group_coverage": 0.875,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.96875,
+                "mean_adjustment": 1.5901391642139013
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.96,
+                "mean_adjustment": 3.2399771105768416
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 0.9629629629629629,
+                "mean_adjustment": 0.6523614153476665
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.9473684210526315,
+                "mean_adjustment": 2.051475658783958
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 0.875,
+                "mean_adjustment": 0.8711472783448362
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.9285714285714286,
+                "mean_adjustment": 2.204742637921719
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 0.9166666666666666,
+                "mean_adjustment": 1.4604728499805102
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9340659340659341,
+                "mean_adjustment": 1.1442894114897109
+              }
+            }
+          },
+          "hierarchy_power50": {
+            "n": 291,
+            "coverage": 0.9278350515463918,
+            "mean_adjustment": 1.4120935994348303,
+            "median_adjustment": 1.3778590885825048,
+            "macro_group_coverage": 0.9186077874975902,
+            "worst_group_coverage": 0.84,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.96875,
+                "mean_adjustment": 1.3796327673580608
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.84,
+                "mean_adjustment": 2.081481647585442
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 0.9179357912807439
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 1.6515588803962977
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 0.9375,
+                "mean_adjustment": 1.0736055747455446
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8571428571428571,
+                "mean_adjustment": 1.7115876485617356
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 0.9166666666666666,
+                "mean_adjustment": 1.39756657337208
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9340659340659341,
+                "mean_adjustment": 1.2814095932727727
+              }
+            }
+          }
+        },
+        "0.95": {
+          "global_raw": {
+            "n": 291,
+            "coverage": 0.9587628865979382,
+            "mean_adjustment": 2.167977071784023,
+            "median_adjustment": 2.1679770717840228,
+            "macro_group_coverage": 0.9470756217466745,
+            "worst_group_coverage": 0.8,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.8,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8928571428571429,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.989010989010989,
+                "mean_adjustment": 2.167977071784023
+              }
+            }
+          },
+          "crop_raw": {
+            "n": 291,
+            "coverage": 0.9553264604810997,
+            "mean_adjustment": 1.9875627916253038,
+            "median_adjustment": 1.8795124809807966,
+            "macro_group_coverage": 0.9457019953730481,
+            "worst_group_coverage": 0.8,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 1.8795124809807966
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.8,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 1.8795124809807962
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8928571428571429,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.978021978021978,
+                "mean_adjustment": 1.8795124809807964
+              }
+            }
+          },
+          "hierarchy_raw": {
+            "n": 291,
+            "coverage": 0.9587628865979382,
+            "mean_adjustment": 2.1826508050390725,
+            "median_adjustment": 2.1679770717840228,
+            "macro_group_coverage": 0.9470756217466745,
+            "worst_group_coverage": 0.8,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.8,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 1.8795124809807962
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8928571428571429,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1679770717840228
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.989010989010989,
+                "mean_adjustment": 2.3004891633104694
+              }
+            }
+          },
+          "hierarchy_scaled": {
+            "n": 291,
+            "coverage": 0.9862542955326461,
+            "mean_adjustment": 2.3416681344340153,
+            "median_adjustment": 2.0971496724275958,
+            "macro_group_coverage": 0.9939259958791209,
+            "worst_group_coverage": 0.967032967032967,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.984375,
+                "mean_adjustment": 2.109214547871174
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 1.0,
+                "mean_adjustment": 4.932184649299584
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 0.9930832375541875
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 1.0,
+                "mean_adjustment": 3.1229408132653598
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 1.0,
+                "mean_adjustment": 1.3261387617539502
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 1.0,
+                "mean_adjustment": 3.356257597905606
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 1.0,
+                "mean_adjustment": 2.2232631668531195
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.967032967032967,
+                "mean_adjustment": 1.7897204920383203
+              }
+            }
+          },
+          "hierarchy_power50": {
+            "n": 291,
+            "coverage": 0.9828178694158075,
+            "mean_adjustment": 2.220323424361447,
+            "median_adjustment": 2.1519263787796636,
+            "macro_group_coverage": 0.9781188548293811,
+            "worst_group_coverage": 0.9285714285714286,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1354417254573823
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.96,
+                "mean_adjustment": 3.334549043431285
+              },
+              "Brazil|soybean": {
+                "n": 27,
+                "coverage": 1.0,
+                "mean_adjustment": 1.3117941769534704
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.9473684210526315,
+                "mean_adjustment": 2.645809580490119
+              },
+              "Brazil|wheat": {
+                "n": 16,
+                "coverage": 1.0,
+                "mean_adjustment": 1.719924096589133
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.9285714285714286,
+                "mean_adjustment": 2.7419761124874675
+              },
+              "Germany|rapeseed": {
+                "n": 12,
+                "coverage": 1.0,
+                "mean_adjustment": 2.238912020086938
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.989010989010989,
+                "mean_adjustment": 2.0186294137179814
+              }
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "calibration_n": 125,
+      "evaluation_n": 309,
+      "methods": {
+        "0.90": {
+          "global_raw": {
+            "n": 309,
+            "coverage": 0.9061488673139159,
+            "mean_adjustment": 1.252892083549326,
+            "median_adjustment": 1.2528920835493258,
+            "macro_group_coverage": 0.8849825248925481,
+            "worst_group_coverage": 0.72,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.9375,
+                "mean_adjustment": 1.2528920835493258
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.72,
+                "mean_adjustment": 1.2528920835493258
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 0.9411764705882353,
+                "mean_adjustment": 1.2528920835493258
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 1.2528920835493258
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 1.252892083549326
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.7857142857142857,
+                "mean_adjustment": 1.252892083549326
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 0.8666666666666667,
+                "mean_adjustment": 1.2528920835493262
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9340659340659341,
+                "mean_adjustment": 1.252892083549326
+              }
+            }
+          },
+          "crop_raw": {
+            "n": 309,
+            "coverage": 0.9029126213592233,
+            "mean_adjustment": 1.2312201580355817,
+            "median_adjustment": 1.218725629550617,
+            "macro_group_coverage": 0.8830293998925481,
+            "worst_group_coverage": 0.72,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.921875,
+                "mean_adjustment": 1.218725629550617
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.72,
+                "mean_adjustment": 1.2528920835493258
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 0.9411764705882353,
+                "mean_adjustment": 1.2528920835493258
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 1.218725629550617
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 1.252892083549326
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.7857142857142857,
+                "mean_adjustment": 1.252892083549326
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 0.8666666666666667,
+                "mean_adjustment": 1.2528920835493262
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9340659340659341,
+                "mean_adjustment": 1.218725629550617
+              }
+            }
+          },
+          "hierarchy_raw": {
+            "n": 309,
+            "coverage": 0.919093851132686,
+            "mean_adjustment": 1.3939306065004802,
+            "median_adjustment": 1.4907296004560848,
+            "macro_group_coverage": 0.8922155262661745,
+            "worst_group_coverage": 0.72,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.984375,
+                "mean_adjustment": 1.6175563674139912
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.72,
+                "mean_adjustment": 1.2528920835493258
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 0.9411764705882353,
+                "mean_adjustment": 1.2528920835493258
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 1.218725629550617
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 1.252892083549326
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.7857142857142857,
+                "mean_adjustment": 1.252892083549326
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 0.8666666666666667,
+                "mean_adjustment": 1.2528920835493262
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.945054945054945,
+                "mean_adjustment": 1.490729600456085
+              }
+            }
+          },
+          "hierarchy_scaled": {
+            "n": 309,
+            "coverage": 0.9255663430420712,
+            "mean_adjustment": 1.3685499258185492,
+            "median_adjustment": 1.400739401311028,
+            "macro_group_coverage": 0.897846468546933,
+            "worst_group_coverage": 0.8,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 1.6828083038124264
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.92,
+                "mean_adjustment": 2.3003982359848654
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 0.8235294117647058,
+                "mean_adjustment": 0.596949440545024
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 0.6911246865922788
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 1.4814033674125582
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8214285714285714,
+                "mean_adjustment": 1.5950346230166335
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 0.8,
+                "mean_adjustment": 1.048951042257575
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9230769230769231,
+                "mean_adjustment": 1.2725806739446077
+              }
+            }
+          },
+          "hierarchy_power50": {
+            "n": 309,
+            "coverage": 0.9255663430420712,
+            "mean_adjustment": 1.3408597722717313,
+            "median_adjustment": 1.3965095405143546,
+            "macro_group_coverage": 0.896815710089704,
+            "worst_group_coverage": 0.7857142857142857,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 1.573892515797085
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.8,
+                "mean_adjustment": 1.6069394539974269
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 0.8823529411764706,
+                "mean_adjustment": 0.8146294075978122
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 0.9814953338025103
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.8947368421052632,
+                "mean_adjustment": 1.2856737509580478
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.7857142857142857,
+                "mean_adjustment": 1.3360293044860931
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 0.8666666666666667,
+                "mean_adjustment": 1.0853396210457928
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.945054945054945,
+                "mean_adjustment": 1.41721276596507
+              }
+            }
+          }
+        },
+        "0.95": {
+          "global_raw": {
+            "n": 309,
+            "coverage": 0.9676375404530745,
+            "mean_adjustment": 2.259221219988673,
+            "median_adjustment": 2.259221219988673,
+            "macro_group_coverage": 0.9591902834008097,
+            "worst_group_coverage": 0.8571428571428571,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.88,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.9473684210526315,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8571428571428571,
+                "mean_adjustment": 2.2592212199886736
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.2592212199886736
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.989010989010989,
+                "mean_adjustment": 2.259221219988673
+              }
+            }
+          },
+          "crop_raw": {
+            "n": 309,
+            "coverage": 0.9676375404530745,
+            "mean_adjustment": 2.259221219988673,
+            "median_adjustment": 2.259221219988673,
+            "macro_group_coverage": 0.9591902834008097,
+            "worst_group_coverage": 0.8571428571428571,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.88,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.9473684210526315,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8571428571428571,
+                "mean_adjustment": 2.2592212199886736
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.2592212199886736
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.989010989010989,
+                "mean_adjustment": 2.259221219988673
+              }
+            }
+          },
+          "hierarchy_raw": {
+            "n": 309,
+            "coverage": 0.9676375404530745,
+            "mean_adjustment": 2.376352495598361,
+            "median_adjustment": 2.3215929184463273,
+            "macro_group_coverage": 0.9591902834008097,
+            "worst_group_coverage": 0.8571428571428571,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.7360609012972184
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.88,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.9473684210526315,
+                "mean_adjustment": 2.259221219988673
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8571428571428571,
+                "mean_adjustment": 2.2592212199886736
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.2592212199886736
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.989010989010989,
+                "mean_adjustment": 2.3215929184463273
+              }
+            }
+          },
+          "hierarchy_scaled": {
+            "n": 309,
+            "coverage": 0.9773462783171522,
+            "mean_adjustment": 2.4168839290159294,
+            "median_adjustment": 2.2920368479810307,
+            "macro_group_coverage": 0.9730186609056579,
+            "worst_group_coverage": 0.9285714285714286,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.7547286059659273
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 1.0,
+                "mean_adjustment": 4.743912909925929
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 0.9411764705882353,
+                "mean_adjustment": 1.2310373540006625
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 1.0924066226172278
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.9473684210526315,
+                "mean_adjustment": 3.0549704175318344
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.9285714285714286,
+                "mean_adjustment": 3.289302357105975
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1631612793841097
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.967032967032967,
+                "mean_adjustment": 1.9011233802441445
+              }
+            }
+          },
+          "hierarchy_power50": {
+            "n": 309,
+            "coverage": 0.9805825242718447,
+            "mean_adjustment": 2.3700614689523656,
+            "median_adjustment": 2.362653104275694,
+            "macro_group_coverage": 0.9767452284557547,
+            "worst_group_coverage": 0.9285714285714286,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.740378302629357
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.96,
+                "mean_adjustment": 3.369105275933727
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 1.7079499966480693
+              },
+              "Brazil|soybean": {
+                "n": 41,
+                "coverage": 1.0,
+                "mean_adjustment": 1.5644075104298167
+              },
+              "Brazil|corn": {
+                "n": 19,
+                "coverage": 0.9473684210526315,
+                "mean_adjustment": 2.695540399301939
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.9285714285714286,
+                "mean_adjustment": 2.801115728006372
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.275520359120604
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.978021978021978,
+                "mean_adjustment": 2.088996817835785
+              }
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "calibration_n": 125,
+      "evaluation_n": 316,
+      "methods": {
+        "0.90": {
+          "global_raw": {
+            "n": 316,
+            "coverage": 0.9367088607594937,
+            "mean_adjustment": 1.6817445533687003,
+            "median_adjustment": 1.6817445533687003,
+            "macro_group_coverage": 0.9193976076007326,
+            "worst_group_coverage": 0.76,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.984375,
+                "mean_adjustment": 1.6817445533687003
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.76,
+                "mean_adjustment": 1.6817445533687003
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 1.6817445533687003
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 1.6817445533687005
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 0.9,
+                "mean_adjustment": 1.6817445533687008
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8214285714285714,
+                "mean_adjustment": 1.6817445533687005
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 0.9333333333333333,
+                "mean_adjustment": 1.6817445533687008
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9560439560439561,
+                "mean_adjustment": 1.6817445533687003
+              }
+            }
+          },
+          "crop_raw": {
+            "n": 316,
+            "coverage": 0.9367088607594937,
+            "mean_adjustment": 1.6817445533687003,
+            "median_adjustment": 1.6817445533687003,
+            "macro_group_coverage": 0.9193976076007326,
+            "worst_group_coverage": 0.76,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 0.984375,
+                "mean_adjustment": 1.6817445533687003
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.76,
+                "mean_adjustment": 1.6817445533687003
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 1.6817445533687003
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 1.6817445533687005
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 0.9,
+                "mean_adjustment": 1.6817445533687008
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8214285714285714,
+                "mean_adjustment": 1.6817445533687005
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 0.9333333333333333,
+                "mean_adjustment": 1.6817445533687008
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.9560439560439561,
+                "mean_adjustment": 1.6817445533687003
+              }
+            }
+          },
+          "hierarchy_raw": {
+            "n": 316,
+            "coverage": 0.9430379746835443,
+            "mean_adjustment": 1.8500648218915592,
+            "median_adjustment": 1.6817445533687003,
+            "macro_group_coverage": 0.922724358974359,
+            "worst_group_coverage": 0.76,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.2252344173063467
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.76,
+                "mean_adjustment": 1.6817445533687003
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 1.6817445533687003
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 1.6817445533687005
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 0.9,
+                "mean_adjustment": 1.6817445533687008
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8214285714285714,
+                "mean_adjustment": 1.6817445533687005
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 0.9333333333333333,
+                "mean_adjustment": 1.6817445533687008
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.967032967032967,
+                "mean_adjustment": 1.884006680415008
+              }
+            }
+          },
+          "hierarchy_scaled": {
+            "n": 316,
+            "coverage": 0.9715189873417721,
+            "mean_adjustment": 1.874538844976604,
+            "median_adjustment": 1.8976600729088582,
+            "macro_group_coverage": 0.9609946670976083,
+            "worst_group_coverage": 0.8823529411764706,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.0209561476555717
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.96,
+                "mean_adjustment": 3.3103402791754855
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 0.8823529411764706,
+                "mean_adjustment": 0.9177411653310404
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 0.8803573501094696
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 0.95,
+                "mean_adjustment": 2.4780107405263765
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.9285714285714286,
+                "mean_adjustment": 2.4468763529248925
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 1.6618134468416497
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.967032967032967,
+                "mean_adjustment": 1.7464173788223156
+              }
+            }
+          },
+          "hierarchy_power50": {
+            "n": 316,
+            "coverage": 0.9651898734177216,
+            "mean_adjustment": 1.8585652926979894,
+            "median_adjustment": 1.9025880600875076,
+            "macro_group_coverage": 0.9544190368455074,
+            "worst_group_coverage": 0.8571428571428571,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.1187669868920262
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.92,
+                "mean_adjustment": 2.461149564368442
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 0.9411764705882353,
+                "mean_adjustment": 1.2887299944844917
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 1.2110484606300078
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 0.95,
+                "mean_adjustment": 2.1341012695247654
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8571428571428571,
+                "mean_adjustment": 2.118752298617514
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 1.7472168430382429
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.967032967032967,
+                "mean_adjustment": 1.8063801859012958
+              }
+            }
+          }
+        },
+        "0.95": {
+          "global_raw": {
+            "n": 316,
+            "coverage": 0.9746835443037974,
+            "mean_adjustment": 2.510808444143366,
+            "median_adjustment": 2.510808444143366,
+            "macro_group_coverage": 0.9676098901098902,
+            "worst_group_coverage": 0.8928571428571429,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.92,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 0.95,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8928571428571429,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.978021978021978,
+                "mean_adjustment": 2.510808444143366
+              }
+            }
+          },
+          "crop_raw": {
+            "n": 316,
+            "coverage": 0.9746835443037974,
+            "mean_adjustment": 2.510808444143366,
+            "median_adjustment": 2.510808444143366,
+            "macro_group_coverage": 0.9676098901098902,
+            "worst_group_coverage": 0.8928571428571429,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.92,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 0.95,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8928571428571429,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.978021978021978,
+                "mean_adjustment": 2.510808444143366
+              }
+            }
+          },
+          "hierarchy_raw": {
+            "n": 316,
+            "coverage": 0.9778481012658228,
+            "mean_adjustment": 2.687303347751586,
+            "median_adjustment": 2.510808444143366,
+            "macro_group_coverage": 0.9689835164835165,
+            "worst_group_coverage": 0.8928571428571429,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.9365607771085607
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.92,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 2.510808444143366
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 0.95,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 0.8928571428571429,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.5108084441433656
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.989010989010989,
+                "mean_adjustment": 2.824261633488696
+              }
+            }
+          },
+          "hierarchy_scaled": {
+            "n": 316,
+            "coverage": 0.990506329113924,
+            "mean_adjustment": 2.707868383747243,
+            "median_adjustment": 2.4607700085658335,
+            "macro_group_coverage": 0.9958791208791209,
+            "worst_group_coverage": 0.967032967032967,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.490129735907372
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 1.0,
+                "mean_adjustment": 5.362105105194773
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 1.4865615534529466
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 1.4199424960715494
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 1.0,
+                "mean_adjustment": 4.013893715425978
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 1.0,
+                "mean_adjustment": 3.963462084649153
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.6918134136380587
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.967032967032967,
+                "mean_adjustment": 2.242177519738225
+              }
+            }
+          },
+          "hierarchy_power50": {
+            "n": 316,
+            "coverage": 0.990506329113924,
+            "mean_adjustment": 2.7135750300662833,
+            "median_adjustment": 2.6494650045884365,
+            "macro_group_coverage": 0.9922527472527473,
+            "worst_group_coverage": 0.96,
+            "per_group": {
+              "Argentina|soybean": {
+                "n": 64,
+                "coverage": 1.0,
+                "mean_adjustment": 2.696546526966891
+              },
+              "Argentina|corn": {
+                "n": 25,
+                "coverage": 0.96,
+                "mean_adjustment": 3.921607513863127
+              },
+              "Brazil|wheat": {
+                "n": 17,
+                "coverage": 1.0,
+                "mean_adjustment": 2.0534685509891197
+              },
+              "Brazil|soybean": {
+                "n": 47,
+                "coverage": 1.0,
+                "mean_adjustment": 1.9296904225638654
+              },
+              "Brazil|corn": {
+                "n": 20,
+                "coverage": 1.0,
+                "mean_adjustment": 3.4004871930896905
+              },
+              "Germany|wheat": {
+                "n": 28,
+                "coverage": 1.0,
+                "mean_adjustment": 3.3760300692678022
+              },
+              "Germany|rapeseed": {
+                "n": 15,
+                "coverage": 1.0,
+                "mean_adjustment": 2.784023693320425
+              },
+              "Uruguay|soybean": {
+                "n": 91,
+                "coverage": 0.978021978021978,
+                "mean_adjustment": 2.4954481497090457
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "mean_adjustment_ratios_proposed_vs_global": {
+    "0.90": 1.0234039014951712,
+    "0.95": 1.016353754704353
+  },
+  "integrity": {
+    "audit_targets_read": false,
+    "calibration_evaluation_field_overlap": 0,
+    "calibration_fit_farm_overlap": 0,
+    "causal_models_reused_from_experiment2": true
+  },
+  "pass_gates": {
+    "integrity": true,
+    "pooled_coverage_all_looks_levels": true,
+    "worst_group_coverage_all_looks_levels": true,
+    "mean_adjustment_ratio_90_le_1.05": true,
+    "mean_adjustment_ratio_95_le_1.05": true
+  },
+  "interpretation_boundary": "Empirical development-shift coverage; distribution-free validity additionally requires exchangeability."
+}

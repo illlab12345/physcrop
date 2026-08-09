@@ -1,0 +1,47 @@
+{
+  "experiment": 9,
+  "status": "PASS_MECHANISM_ONLY",
+  "confirmatory_status": "retrospective_read_only_not_new_confirmation",
+  "mechanism_metrics": {
+    "stage_worst_fpr_relative_reduction": 0.27650497137692065,
+    "past_only_actual_fpr": 6.403521089141143,
+    "contamination_5pct_tpr_loss_pp": 2.100232150063384,
+    "v4_tpr_full": 19.86962332601175,
+    "v4_tpr_baseline": 14.628352969971871,
+    "v4_tpr_gain_pp": 5.24127035603988,
+    "v4_pauc_delta_pp": 0.839888766162403,
+    "v4_clean_fpr": 6.878854566156103,
+    "positive_families_improved": 4,
+    "corrected_hard_alert_rates": {
+      "registration_shift": 0.0,
+      "uniform_radiometry": 6.666666666666666,
+      "thin_cloud": 4.0,
+      "cast_shadow": 4.166666666666666
+    },
+    "two_consecutive_event_recall_full": 39.44444444444444,
+    "two_consecutive_event_recall_baseline": 33.33333333333333
+  },
+  "mechanism_pass_gates": {
+    "immutable_integrity": true,
+    "stage_rescue_passed": true,
+    "causal_fpr_below_10": true,
+    "contamination_5pct_tpr_loss_le_3pp": true,
+    "v4_tpr_gain_ge_2pp": true,
+    "v4_pauc_noninferior": true,
+    "v4_clean_fpr_below_10": true,
+    "v4_gain_three_positive_families": true,
+    "v4_all_corrected_hard_families_below_10": true
+  },
+  "retained_old_strict_gate": {
+    "gate_passed": false,
+    "hard_no_worse_than_baseline": false,
+    "original_gate_passed": false
+  },
+  "claim_boundary": "Supports mechanisms only; not YieldSAT external yield validation or strict OOD dominance.",
+  "source_hashes": {
+    "results/protocol_v2_clean/accept_upgrade_v1/stage_gate_rescue/stage_rescue_gate_report.json": "7fe040b15a509ea5525c82667650a197b308fc66e130458affc6087a14fb4f71",
+    "results/protocol_v2_clean/controlled_confirmation_v4/v4_hard_episode_metric_correction_report.json": "cb73d2540b0838416b367912ef0bf3fdf360819eaa4d5db85df4f3cedb503d25",
+    "results/protocol_v2_clean/controlled_confirmation_v4/v4_final_integrity.json": "a5189b7d86c298cb14162caf3326e81018a2bbab2722048e0632ba483288b99f",
+    "results/protocol_v2_clean/controlled_confirmation_v4/v4_frozen_gate_report.json": "78ab94f440564d5940dae8c5ff34a3d027a49d1962d3edf2552f41550c5435e5"
+  }
+}

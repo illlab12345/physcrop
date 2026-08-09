@@ -1,0 +1,53 @@
+{
+  "status": "frozen_before_outcome_reveal",
+  "created_utc": "2026-08-01T07:35:52.425579+00:00",
+  "audit_fields": 322,
+  "audit_targets_finite": 0,
+  "excluded_structural_fields": 1,
+  "field_ids_sha256": "a2913023c1f627e991e012dc6059d559148a50105c5d914b301adf730a4ea526",
+  "selected_calibration": {
+    "1": "global_raw",
+    "2": "hierarchy_power50",
+    "3": "global_raw"
+  },
+  "alpha_spending": [
+    0.01,
+    0.015,
+    0.025
+  ],
+  "persistence": 2,
+  "gates": {
+    "minimum_outcomes": 300,
+    "late_auroc": 0.7,
+    "look_auroc_count_ge_065": 2,
+    "coverage_slack": 0.03,
+    "fpr": 0.05,
+    "fpr_upper95": 0.08,
+    "minimum_tp": 3,
+    "minimum_sensitivity": 0.05,
+    "minimum_precision": 0.5,
+    "worst_group_fpr": 0.15,
+    "worst_group_r2_strictly_positive": true
+  },
+  "hashes": {
+    "results/yieldsat_risk_v1/final_audit/FINAL_AUDIT_PROTOCOL.md": "8b151fefe7046da07d24d65e5857c503e2756769d50cbc575ae82613f43635e5",
+    "results/yieldsat_risk_v1/MASTER_PROTOCOL.md": "156df3719b617cc217d429e9c6fa61420323f656b09fe14c8037904346efa299",
+    "results/yieldsat_risk_v1/cache/audit_features_blind.npz": "07be1d8d56e3141cc9181fb7ca77181d4cf220bb8c3e50a4c119158d1be1ebab",
+    "results/yieldsat_risk_v1/cache/audit_features_blind.report.json": "8b7ca1b14cec3e89346c4717f9a0776990d41b7a7f97cc0b83b82647b730e524",
+    "results/yieldsat_risk_v1/experiment_02_early_curve/milestones.json": "06f2e0e222c5bfe672a434f43eb8f5d6ed4d2704fec297901c4559fa68f1ba50",
+    "results/yieldsat_risk_v1/experiment_02_early_curve/target_reference.json": "1d442be9ff271790764d8a7c29fa71d12cfb29aa1b3faedefbe798763e5fdabb",
+    "results/yieldsat_risk_v1/experiment_02_early_curve/model_look1.joblib": "aaa8c605843d218eeb6bbac9a878c2b3d0513619bbdcee5fb3c26d145c7e7dd7",
+    "results/yieldsat_risk_v1/experiment_02_early_curve/model_look2.joblib": "e69cd02ca307da5738069f363b5e4b116fbc22c113f751249ab01697d594c6b2",
+    "results/yieldsat_risk_v1/experiment_02_early_curve/model_look3.joblib": "8330a7e956eb9dd1dddd4b82dc1c16dcef39be6140bf4ebbebcc77958c82f881",
+    "results/yieldsat_risk_v1/experiment_01_official_baseline/report.json": "70d4fb698d7b3847a467caf633a1ccb1ca1ddf6636793a42a9b18e6736902adf",
+    "results/yieldsat_risk_v1/experiment_02_early_curve/report.json": "73f530fbf07cd7660e157942c52bee1d2b89084583bf567f6cc017fb918d3db7",
+    "results/yieldsat_risk_v1/experiment_03_calibration/report.json": "f984dc021507f66ba6ede7dfa1c2e93c55c882d17dc66580ea955796ed3f155e",
+    "results/yieldsat_risk_v1/experiment_04_familywise_alert/report.json": "63b5a797be5856317815ddf9d530c8100c2d1af27b2d33368980589550df0705",
+    "results/yieldsat_risk_v1/experiment_05_strong_baselines/report.json": "c062ef5f96750753eb8f27d0d3faefc27d4c45fa4ae4e5844cc9086fbcb9449c",
+    "results/yieldsat_risk_v1/experiment_06_ablations/report.json": "5b53a0b60048749ee2396b2eeb96c2fd67b10192d7a4f029f9eb315e916c77e6",
+    "results/yieldsat_risk_v1/experiment_07_spatial_maps/report.json": "8d53066c69c3a46de7801bd2f54fc2914e9fffbe671c2ae10273fd66c6b2771f",
+    "results/yieldsat_risk_v1/experiment_08_robustness/report.json": "4a9c9a67ecab2a82b718bcd670628f683501311b500044c9fc32aef7c132f855",
+    "results/yieldsat_risk_v1/experiment_09_anda_mechanism/report.json": "2e24f8310f2b63b4c1310ef05b70ab70424b49351d416dc71b8982b588d6c7a7",
+    "scripts/run_yieldsat_final_audit.py": "ec08115567ad3cd14a78733e4a73fdd2fec4e0c3f228971db78b97c35e05c6de"
+  }
+}

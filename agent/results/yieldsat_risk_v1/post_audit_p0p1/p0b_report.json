@@ -1,0 +1,913 @@
+{
+  "analysis_status": "post-audit protocol correction/comparison; original frozen audit unchanged",
+  "null_definition": {
+    "roles": [
+      "conformal"
+    ],
+    "early_stop_excluded": true,
+    "model_fit_excluded": true,
+    "low_yield_excluded": true,
+    "conformal_fields": 125,
+    "conformal_farms": 11,
+    "counts": {
+      "1": {
+        "climatology": {
+          "eligible_conformal": 118,
+          "non_low_null": 96
+        },
+        "ndvi_ndmi_rain_ridge": {
+          "eligible_conformal": 118,
+          "non_low_null": 96
+        },
+        "extratrees": {
+          "eligible_conformal": 118,
+          "non_low_null": 96
+        },
+        "hist_gradient_boosting": {
+          "eligible_conformal": 118,
+          "non_low_null": 96
+        },
+        "dual_tree": {
+          "eligible_conformal": 118,
+          "non_low_null": 96
+        }
+      },
+      "2": {
+        "climatology": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        },
+        "ndvi_ndmi_rain_ridge": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        },
+        "extratrees": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        },
+        "hist_gradient_boosting": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        },
+        "dual_tree": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        }
+      },
+      "3": {
+        "climatology": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        },
+        "ndvi_ndmi_rain_ridge": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        },
+        "extratrees": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        },
+        "hist_gradient_boosting": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        },
+        "dual_tree": {
+          "eligible_conformal": 125,
+          "non_low_null": 97
+        }
+      }
+    }
+  },
+  "audit_uniform_policy_comparison": {
+    "climatology": {
+      "look_metrics": {
+        "1": {
+          "n": 300,
+          "rmse": 1.4829833257737655,
+          "r2": 0.6930187832632184,
+          "nrmse_by_target_sd": 0.5540588567442827,
+          "climatology_rmse": 1.4829833257737655,
+          "rmse_skill": 0.0,
+          "mse_skill": 0.0,
+          "prevalence": 0.22333333333333333,
+          "auroc": 0.5578117993722376,
+          "auprc": 0.266107721406718
+        },
+        "2": {
+          "n": 310,
+          "rmse": 1.4628737910710559,
+          "r2": 0.6923271804432676,
+          "nrmse_by_target_sd": 0.5546826295790526,
+          "climatology_rmse": 1.4628737910710559,
+          "rmse_skill": 0.0,
+          "mse_skill": 0.0,
+          "prevalence": 0.22580645161290322,
+          "auroc": 0.5616964285714285,
+          "auprc": 0.27097856928123787
+        },
+        "3": {
+          "n": 322,
+          "rmse": 1.4480850203801348,
+          "r2": 0.6928649111851277,
+          "nrmse_by_target_sd": 0.5541976983124994,
+          "climatology_rmse": 1.4480850203801348,
+          "rmse_skill": 0.0,
+          "mse_skill": 0.0,
+          "prevalence": 0.22981366459627328,
+          "auroc": 0.5779751525719268,
+          "auprc": 0.291252521696151
+        }
+      },
+      "watch": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 5,
+        "fp": 18,
+        "fn": 69,
+        "tn": 230,
+        "fpr": 0.07258064516129033,
+        "fpr_cp95": [
+          0.043580715998398224,
+          0.11228460031488098
+        ],
+        "sensitivity": 0.06756756756756757,
+        "sensitivity_cp95": [
+          0.02230151232923524,
+          0.15067872854307848
+        ],
+        "precision": 0.21739130434782608,
+        "precision_cp95": [
+          0.07460340764880372,
+          0.4370307262368146
+        ]
+      },
+      "action": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 5,
+        "fp": 18,
+        "fn": 69,
+        "tn": 230,
+        "fpr": 0.07258064516129033,
+        "fpr_cp95": [
+          0.043580715998398224,
+          0.11228460031488098
+        ],
+        "sensitivity": 0.06756756756756757,
+        "sensitivity_cp95": [
+          0.02230151232923524,
+          0.15067872854307848
+        ],
+        "precision": 0.21739130434782608,
+        "precision_cp95": [
+          0.07460340764880372,
+          0.4370307262368146
+        ]
+      },
+      "watch_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.06719367588932806,
+            0.1886816519060454
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.06349206349206349,
+            0.1686746987951807
+          ]
+        },
+        "precision": {
+          "valid_replicates": 9851,
+          "q025_median_q975": [
+            0.0,
+            0.21875,
+            1.0
+          ]
+        }
+      },
+      "action_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.06719367588932806,
+            0.1886816519060454
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.06349206349206349,
+            0.1686746987951807
+          ]
+        },
+        "precision": {
+          "valid_replicates": 9851,
+          "q025_median_q975": [
+            0.0,
+            0.21875,
+            1.0
+          ]
+        }
+      }
+    },
+    "ndvi_ndmi_rain_ridge": {
+      "look_metrics": {
+        "1": {
+          "n": 300,
+          "rmse": 1.4465084528921544,
+          "r2": 0.7079338546971953,
+          "nrmse_by_target_sd": 0.5404314436658962,
+          "climatology_rmse": 1.4829833257737655,
+          "rmse_skill": 0.024595605525490227,
+          "mse_skill": 0.04858626723981485,
+          "prevalence": 0.22333333333333333,
+          "auroc": 0.643840881429761,
+          "auprc": 0.29126026938917104
+        },
+        "2": {
+          "n": 310,
+          "rmse": 1.3700833838085107,
+          "r2": 0.7301208014383287,
+          "nrmse_by_target_sd": 0.5194989880275719,
+          "climatology_rmse": 1.4628737910710559,
+          "rmse_skill": 0.06343022058971193,
+          "mse_skill": 0.12283704829536424,
+          "prevalence": 0.22580645161290322,
+          "auroc": 0.6914285714285714,
+          "auprc": 0.35049338737365826
+        },
+        "3": {
+          "n": 322,
+          "rmse": 1.2767090558822205,
+          "r2": 0.7612599990609499,
+          "nrmse_by_target_sd": 0.48861027510588645,
+          "climatology_rmse": 1.4480850203801348,
+          "rmse_skill": 0.11834661783389389,
+          "mse_skill": 0.22268731371506612,
+          "prevalence": 0.22981366459627328,
+          "auroc": 0.7472210113339145,
+          "auprc": 0.46835132517586264
+        }
+      },
+      "watch": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 1,
+        "fp": 2,
+        "fn": 73,
+        "tn": 246,
+        "fpr": 0.008064516129032258,
+        "fpr_cp95": [
+          0.0009781468081032888,
+          0.028826549750623008
+        ],
+        "sensitivity": 0.013513513513513514,
+        "sensitivity_cp95": [
+          0.0003420740196647972,
+          0.07300738850966484
+        ],
+        "precision": 0.3333333333333333,
+        "precision_cp95": [
+          0.008403758659612636,
+          0.9057006759497539
+        ]
+      },
+      "action": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 1,
+        "fp": 0,
+        "fn": 73,
+        "tn": 248,
+        "fpr": 0.0,
+        "fpr_cp95": [
+          0.0,
+          0.014764434812554551
+        ],
+        "sensitivity": 0.013513513513513514,
+        "sensitivity_cp95": [
+          0.0003420740196647972,
+          0.07300738850966484
+        ],
+        "precision": 1.0,
+        "precision_cp95": [
+          0.025,
+          1.0
+        ]
+      },
+      "watch_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.007692307692307693,
+            0.019672453853104423
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.012658227848101266,
+            0.05
+          ]
+        },
+        "precision": {
+          "valid_replicates": 9541,
+          "q025_median_q975": [
+            0.0,
+            0.3333333333333333,
+            1.0
+          ]
+        }
+      },
+      "action_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.012658227848101266,
+            0.05
+          ]
+        },
+        "precision": {
+          "valid_replicates": 6352,
+          "q025_median_q975": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "extratrees": {
+      "look_metrics": {
+        "1": {
+          "n": 300,
+          "rmse": 1.2407220418974232,
+          "r2": 0.7851238259793807,
+          "nrmse_by_target_sd": 0.463547380556313,
+          "climatology_rmse": 1.4829833257737655,
+          "rmse_skill": 0.16336076047917758,
+          "mse_skill": 0.30003478289401986,
+          "prevalence": 0.22333333333333333,
+          "auroc": 0.7369803343796042,
+          "auprc": 0.4411790547936626
+        },
+        "2": {
+          "n": 310,
+          "rmse": 1.1901775467925,
+          "r2": 0.7963431984149991,
+          "nrmse_by_target_sd": 0.4512835046675216,
+          "climatology_rmse": 1.4628737910710559,
+          "rmse_skill": 0.1864113267617563,
+          "mse_skill": 0.3380734707784344,
+          "prevalence": 0.22580645161290322,
+          "auroc": 0.7539285714285714,
+          "auprc": 0.46485976483204716
+        },
+        "3": {
+          "n": 322,
+          "rmse": 1.0639985820230047,
+          "r2": 0.8341851540447999,
+          "nrmse_by_target_sd": 0.40720369098916587,
+          "climatology_rmse": 1.4480850203801348,
+          "rmse_skill": 0.2652374915502572,
+          "mse_skill": 0.46012405617664176,
+          "prevalence": 0.22981366459627328,
+          "auroc": 0.8316259808195292,
+          "auprc": 0.6198079673853966
+        }
+      },
+      "watch": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 22,
+        "fp": 10,
+        "fn": 52,
+        "tn": 238,
+        "fpr": 0.04032258064516129,
+        "fpr_cp95": [
+          0.019502865499286634,
+          0.07290265893159302
+        ],
+        "sensitivity": 0.2972972972972973,
+        "sensitivity_cp95": [
+          0.1965839542123655,
+          0.4148352546861722
+        ],
+        "precision": 0.6875,
+        "precision_cp95": [
+          0.49992241836783036,
+          0.8388152759117995
+        ]
+      },
+      "action": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 8,
+        "fp": 4,
+        "fn": 66,
+        "tn": 244,
+        "fpr": 0.016129032258064516,
+        "fpr_cp95": [
+          0.004411655864830664,
+          0.040779531796571004
+        ],
+        "sensitivity": 0.10810810810810811,
+        "sensitivity_cp95": [
+          0.04784399039492811,
+          0.201950136231846
+        ],
+        "precision": 0.6666666666666666,
+        "precision_cp95": [
+          0.34887550641881554,
+          0.9007539088504167
+        ]
+      },
+      "watch_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.012193887627135382,
+            0.03937007874015748,
+            0.07368421052631578
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.175,
+            0.2948717948717949,
+            0.39683123249299707
+          ]
+        },
+        "precision": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.5384615384615384,
+            0.6875,
+            0.8571428571428571
+          ]
+        }
+      },
+      "action_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.015267175572519083,
+            0.032520325203252036
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.015625,
+            0.10294117647058823,
+            0.208955223880597
+          ]
+        },
+        "precision": {
+          "valid_replicates": 9963,
+          "q025_median_q975": [
+            0.3333333333333333,
+            0.6666666666666666,
+            1.0
+          ]
+        }
+      }
+    },
+    "hist_gradient_boosting": {
+      "look_metrics": {
+        "1": {
+          "n": 300,
+          "rmse": 1.1637391896228888,
+          "r2": 0.8109613589752233,
+          "nrmse_by_target_sd": 0.43478574151503263,
+          "climatology_rmse": 1.4829833257737655,
+          "rmse_skill": 0.2152715614548848,
+          "mse_skill": 0.3842012777385454,
+          "prevalence": 0.22333333333333333,
+          "auroc": 0.7686887451156236,
+          "auprc": 0.5078421449497278
+        },
+        "2": {
+          "n": 310,
+          "rmse": 1.1919463321334092,
+          "r2": 0.7957374184774475,
+          "nrmse_by_target_sd": 0.4519541807778223,
+          "climatology_rmse": 1.4628737910710559,
+          "rmse_skill": 0.18520220991811243,
+          "mse_skill": 0.3361045612776723,
+          "prevalence": 0.22580645161290322,
+          "auroc": 0.7656547619047618,
+          "auprc": 0.5377179118901348
+        },
+        "3": {
+          "n": 322,
+          "rmse": 1.0878627636593836,
+          "r2": 0.8266636941590364,
+          "nrmse_by_target_sd": 0.41633676974411415,
+          "climatology_rmse": 1.4480850203801348,
+          "rmse_skill": 0.24875767075208732,
+          "mse_skill": 0.43563496274617064,
+          "prevalence": 0.22981366459627328,
+          "auroc": 0.8223081952920664,
+          "auprc": 0.5991626206795387
+        }
+      },
+      "watch": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 25,
+        "fp": 12,
+        "fn": 49,
+        "tn": 236,
+        "fpr": 0.04838709677419355,
+        "fpr_cp95": [
+          0.025248984599996405,
+          0.08299649774064331
+        ],
+        "sensitivity": 0.33783783783783783,
+        "sensitivity_cp95": [
+          0.23192718054318862,
+          0.4571759536421228
+        ],
+        "precision": 0.6756756756756757,
+        "precision_cp95": [
+          0.5021467164866031,
+          0.8198613519479433
+        ]
+      },
+      "action": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 10,
+        "fp": 2,
+        "fn": 64,
+        "tn": 246,
+        "fpr": 0.008064516129032258,
+        "fpr_cp95": [
+          0.0009781468081032888,
+          0.028826549750623008
+        ],
+        "sensitivity": 0.13513513513513514,
+        "sensitivity_cp95": [
+          0.06675098126268342,
+          0.23450980079469794
+        ],
+        "precision": 0.8333333333333334,
+        "precision_cp95": [
+          0.5158622513140328,
+          0.9791374745399076
+        ]
+      },
+      "watch_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.025179856115107913,
+            0.047619047619047616,
+            0.08035826453697055
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.21621621621621623,
+            0.3333333333333333,
+            0.45348837209302323
+          ]
+        },
+        "precision": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.5,
+            0.6756756756756757,
+            0.8048780487804879
+          ]
+        }
+      },
+      "action_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.007633587786259542,
+            0.022989829969807703
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.045454545454545456,
+            0.13095238095238096,
+            0.2318840579710145
+          ]
+        },
+        "precision": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.5555555555555556,
+            0.8333333333333334,
+            1.0
+          ]
+        }
+      }
+    },
+    "dual_tree": {
+      "look_metrics": {
+        "1": {
+          "n": 300,
+          "rmse": 1.2407220418974232,
+          "r2": 0.7851238259793807,
+          "nrmse_by_target_sd": 0.463547380556313,
+          "climatology_rmse": 1.4829833257737655,
+          "rmse_skill": 0.16336076047917758,
+          "mse_skill": 0.30003478289401986,
+          "prevalence": 0.22333333333333333,
+          "auroc": 0.7369803343796042,
+          "auprc": 0.4411790547936626
+        },
+        "2": {
+          "n": 310,
+          "rmse": 1.1901775467925,
+          "r2": 0.7963431984149991,
+          "nrmse_by_target_sd": 0.4512835046675216,
+          "climatology_rmse": 1.4628737910710559,
+          "rmse_skill": 0.1864113267617563,
+          "mse_skill": 0.3380734707784344,
+          "prevalence": 0.22580645161290322,
+          "auroc": 0.7539285714285714,
+          "auprc": 0.46485976483204716
+        },
+        "3": {
+          "n": 322,
+          "rmse": 1.0581873461799898,
+          "r2": 0.8359914680328325,
+          "nrmse_by_target_sd": 0.40497966858493956,
+          "climatology_rmse": 1.4480850203801348,
+          "rmse_skill": 0.2692505403431309,
+          "mse_skill": 0.46600522721119386,
+          "prevalence": 0.22981366459627328,
+          "auroc": 0.8330972101133391,
+          "auprc": 0.624524876758454
+        }
+      },
+      "watch": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 23,
+        "fp": 12,
+        "fn": 51,
+        "tn": 236,
+        "fpr": 0.04838709677419355,
+        "fpr_cp95": [
+          0.025248984599996405,
+          0.08299649774064331
+        ],
+        "sensitivity": 0.3108108108108108,
+        "sensitivity_cp95": [
+          0.20826352683800145,
+          0.4290471790438802
+        ],
+        "precision": 0.6571428571428571,
+        "precision_cp95": [
+          0.47789001660647873,
+          0.8086758978117342
+        ]
+      },
+      "action": {
+        "n": 322,
+        "low_n": 74,
+        "normal_n": 248,
+        "tp": 8,
+        "fp": 4,
+        "fn": 66,
+        "tn": 244,
+        "fpr": 0.016129032258064516,
+        "fpr_cp95": [
+          0.004411655864830664,
+          0.040779531796571004
+        ],
+        "sensitivity": 0.10810810810810811,
+        "sensitivity_cp95": [
+          0.04784399039492811,
+          0.201950136231846
+        ],
+        "precision": 0.6666666666666666,
+        "precision_cp95": [
+          0.34887550641881554,
+          0.9007539088504167
+        ]
+      },
+      "watch_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.020161290322580645,
+            0.04744525547445255,
+            0.08108108108108109
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.1917735354124162,
+            0.30864197530864196,
+            0.4084507042253521
+          ]
+        },
+        "precision": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.5277412280701754,
+            0.65625,
+            0.8
+          ]
+        }
+      },
+      "action_farm_cluster_bootstrap95": {
+        "fpr": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.0,
+            0.015267175572519083,
+            0.032520325203252036
+          ]
+        },
+        "sensitivity": {
+          "valid_replicates": 10000,
+          "q025_median_q975": [
+            0.015625,
+            0.10294117647058823,
+            0.208955223880597
+          ]
+        },
+        "precision": {
+          "valid_replicates": 9963,
+          "q025_median_q975": [
+            0.3333333333333333,
+            0.6666666666666666,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "full_development_farm_grouped_oof": {
+    "overall": {
+      "n": 1848,
+      "rmse": 1.222425338100422,
+      "r2": 0.812026981691366,
+      "nrmse_by_target_sd": 0.43355855234170393,
+      "climatology_rmse": 1.554461201873038,
+      "rmse_skill": 0.21360189844077904,
+      "mse_skill": 0.3815780258640532,
+      "prevalence": 0.2050865800865801,
+      "auroc": 0.8116429067931625,
+      "auprc": 0.5434757434539118,
+      "fields": 1848,
+      "farms": 81,
+      "macro_group_r2": 0.24908289536696365,
+      "worst_group_r2": -0.02818508829848443,
+      "per_group": {
+        "Argentina|corn": {
+          "n": 156,
+          "rmse": 2.0467302927895576,
+          "r2": 0.4830698638560609
+        },
+        "Argentina|soybean": {
+          "n": 375,
+          "rmse": 0.9909595559522943,
+          "r2": 0.34446069295617354
+        },
+        "Argentina|wheat": {
+          "n": 103,
+          "rmse": 1.6766084467529352,
+          "r2": 0.38393287531368503
+        },
+        "Brazil|corn": {
+          "n": 96,
+          "rmse": 1.6764185540952077,
+          "r2": 0.14263969459430093
+        },
+        "Brazil|soybean": {
+          "n": 236,
+          "rmse": 0.5818796029960207,
+          "r2": 0.295381450998054
+        },
+        "Brazil|wheat": {
+          "n": 125,
+          "rmse": 0.7724529034640351,
+          "r2": 0.08903789337456713
+        },
+        "Germany|rapeseed": {
+          "n": 95,
+          "rmse": 1.3949166802305573,
+          "r2": -0.02818508829848443
+        },
+        "Germany|wheat": {
+          "n": 165,
+          "rmse": 1.7965847095704792,
+          "r2": 0.0680073296160768
+        },
+        "Uruguay|soybean": {
+          "n": 497,
+          "rmse": 0.7878781483555981,
+          "r2": 0.4634013458922388
+        }
+      }
+    },
+    "folds": [
+      {
+        "fold": 1,
+        "train_fields": 1335,
+        "stop_fields": 143,
+        "test_fields": 370,
+        "train_farms": 60,
+        "test_farms": 14,
+        "farm_overlap": 0,
+        "hist_weight": 0.1
+      },
+      {
+        "fold": 2,
+        "train_fields": 1316,
+        "stop_fields": 162,
+        "test_fields": 370,
+        "train_farms": 54,
+        "test_farms": 17,
+        "farm_overlap": 0,
+        "hist_weight": 0.0
+      },
+      {
+        "fold": 3,
+        "train_fields": 1332,
+        "stop_fields": 146,
+        "test_fields": 370,
+        "train_farms": 55,
+        "test_farms": 17,
+        "farm_overlap": 0,
+        "hist_weight": 0.4
+      },
+      {
+        "fold": 4,
+        "train_fields": 1380,
+        "stop_fields": 99,
+        "test_fields": 369,
+        "train_farms": 56,
+        "test_farms": 17,
+        "farm_overlap": 0,
+        "hist_weight": 0.0
+      },
+      {
+        "fold": 5,
+        "train_fields": 1381,
+        "stop_fields": 98,
+        "test_fields": 369,
+        "train_farms": 59,
+        "test_farms": 16,
+        "farm_overlap": 0,
+        "hist_weight": 0.2
+      }
+    ]
+  },
+  "integrity": {
+    "audit_ids_match": true,
+    "audit_labels_used_for_fit_calibration_or_threshold_selection": false,
+    "frozen_components_used": [
+      "extratrees",
+      "hist_gradient_boosting",
+      "dual_tree"
+    ],
+    "post_audit_fixed_training": [
+      "ndvi_ndmi_rain_ridge"
+    ],
+    "farm_oof_overlap_each_fold_zero": true
+  }
+}
